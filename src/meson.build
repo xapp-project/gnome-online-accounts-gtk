@@ -14,7 +14,8 @@ configure_file(output: 'config.h', configuration: config)
 deps = [
   dependency('glib-2.0', version: '>= 2.44'),
   dependency('gtk4'),
-  dependency('goa-backend-1.0', version: '>= 3.25.3'),
+  dependency('goa-1.0', version: '>= 3.50'),
+  dependency('goa-backend-1.0', version: '>= 3.50'),
 ]
 
 resources = gnome.compile_resources('gnome-online-accounts-gtk-resources',
