@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Icon=applications-system-symbolic
+Exec=@bindir@/gnome-online-accounts-gtk
