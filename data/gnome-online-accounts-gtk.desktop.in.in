@@ -1,4 +1,5 @@
 [Desktop Entry]
+Name=Gnome Online Accounts
 Type=Application
-Icon=applications-system-symbolic
+Icon=cs-online-accounts
 Exec=@bindir@/gnome-online-accounts-gtk

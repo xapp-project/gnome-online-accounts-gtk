@@ -52,9 +52,9 @@
                         <property name="child">
                           <object class="GtkListBox" id="accounts_listbox">
                             <property name="focusable">1</property>
-                            <property name="selection_mode">single</property>
+                            <property name="selection_mode">none</property>
                             <property name="show-separators">1</property>
-                            <signal name="row-selected" handler="on_account_row_activated" object="OaWindow" swapped="no"/>
+                            <signal name="row-activated" handler="on_account_row_activated" object="OaWindow" swapped="no"/>
                           </object>
                         </property>
                       </object>

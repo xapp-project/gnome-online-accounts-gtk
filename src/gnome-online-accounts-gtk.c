@@ -57,8 +57,6 @@ show_account_cb (GoaProvider  *provider,
         }
     }
 
-    gtk_list_box_select_row (GTK_LIST_BOX (window->accounts_listbox), NULL);
-
     g_error_free (error);
 }
 
@@ -271,30 +269,8 @@ on_account_changed (GoaClient *client,
                     GoaObject *object,
                     gpointer   user_data)
 {
-    OaWindow *window = OA_WINDOW (user_data);
-    GtkListBoxRow *selected_row;
-    GoaObject *selected_object;
-    int position;
-
-    // FIXME: Not sure if we even need to react to account-changed, goa updates its own
-    // dialog, and the appearance in the list box isn't going to change. I think it may
-    // be weird to popup an account without the user triggering it.
-
-    selected_row = gtk_list_box_get_selected_row (GTK_LIST_BOX (window->accounts_listbox));
-    if (selected_row != NULL)
-    {
-        return;
-    }
-
-    position = gtk_list_box_row_get_index (selected_row);
-    selected_object = g_list_model_get_item (window->accounts_model, position);
-
-    if (selected_object == object)
-    {
-        show_account (window, object);
-    }
-
-    g_object_unref (selected_object);
+    // TODO: anything needed?
+    g_debug ("Account changed");
 }
 
 static GtkWidget *
