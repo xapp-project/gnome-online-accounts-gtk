@@ -1057,6 +1057,11 @@ on_app_activate (GtkApplication *app, gpointer user_data)
     gtk_window_present (GTK_WINDOW (window));
 }
 
+// Bookworm has 2.74.6 currently, Ubuntu 20.04 has 2.72.4
+#if !GLIB_CHECK_VERSION (2, 74, 0)
+#define G_APPLICATION_DEFAULT_FLAGS G_APPLICATION_FLAGS_NONE
+#endif
+
 int main(int argc, char *argv[]) {
     GtkApplication *app;
     gint ret;
