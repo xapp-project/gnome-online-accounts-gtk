@@ -3,3 +3,4 @@ Name=Gnome Online Accounts
 Type=Application
 Icon=cs-online-accounts
 Exec=@bindir@/gnome-online-accounts-gtk
+Keywords=google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;kerberos;imap;smtp;pocket;readitlater;account;

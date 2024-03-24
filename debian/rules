@@ -8,7 +8,7 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		--buildtype=debug
+		--buildtype=debugoptimized \
 		-D deprecated_warnings=false
 
 override_dh_strip:

@@ -2,9 +2,9 @@
 
 rm -f gnome-online-accounts-gtk.pot
 touch gnome-online-accounts-gtk.pot
+xgettext --package-name=gnome-online-accounts-gtk --language=Desktop --join-existing \
+          -k --keyword=Name --keyword=Comment --keyword=Keywords --output=gnome-online-accounts-gtk.pot data/gnome-online-accounts-gtk.desktop.in.in
+xgettext --join-existing -k --from-code=UTF-8 --keyword=_ --keyword=N_ --keyword=C_ --output=gnome-online-accounts-gtk.pot src/*.c
 xgettext --package-name=gnome-online-accounts-gtk --language=Glade --join-existing --add-comments \
          --output=gnome-online-accounts-gtk.pot src/*.ui
-xgettext --package-name=gnome-online-accounts-gtk --language=Desktop --join-existing \
-          -k --keyword=Comment --output=gnome-online-accounts-gtk.pot data/gnome-online-accounts-gtk.desktop.in.in
-xgettext --join-existing --from-code=UTF-8 --keyword=_ --keyword=N_ --output=gnome-online-accounts-gtk.pot src/*.c
 
