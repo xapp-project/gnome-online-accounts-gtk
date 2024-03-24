@@ -6,7 +6,7 @@
     <property name="can_focus">False</property>
     <property name="default-width">600</property>
     <property name="default-height">600</property>
-    <property name="title">Online Accounts</property>
+    <property name="title" translatable="yes">Online Accounts</property>
     <!-- FIXME icon -->
     <property name="icon-name">cs-online-accounts</property>
     <child>

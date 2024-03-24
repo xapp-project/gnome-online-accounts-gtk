@@ -6,6 +6,7 @@
     <property name="can_focus">False</property>
     <property name="default_width">500</property>
     <property name="default_height">600</property>
+    <property name="title" translatable="yes">Online Accounts Info</property>
     <property name="destroy-with-parent">True</property>
     <child>
       <placeholder/>
@@ -21,7 +22,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label">GNOME Online Accounts</property>
+            <property name="label" translatable="yes">GNOME Online Accounts</property>
             <attributes>
               <attribute name="scale" value="2"/>
             </attributes>
