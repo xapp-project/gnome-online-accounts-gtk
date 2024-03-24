@@ -1,6 +1,8 @@
+debian/debhelper-build-stamp
+debian/*.substvars
+debian/gnome-online-accounts-gtk
+debian/gnome-online-accounts-gtk-dbg
 debian/.debhelper
 debian/*.log
-debian/debhelper-build-stamp
 debian/tmp
-debian/*.substvars
 debian/files
