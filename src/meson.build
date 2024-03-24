@@ -1,8 +1,6 @@
 gnome = import('gnome')
 pkg = import('pkgconfig')
 
-top_srcdir = meson.project_source_root()
-
 config_entries = {
     'GETTEXT_PACKAGE' : '"@0@"'.format(meson.project_name()),
     'LOCALEDIR': '"@0@"'.format(prefix / get_option('localedir')),
