@@ -10,6 +10,3 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 		--buildtype=debugoptimized \
 		-D deprecated_warnings=false
-
-override_dh_strip:
-	dh_strip --dbg-package=gnome-online-accounts-gtk-dbg
