@@ -7,8 +7,7 @@
     <property name="default-width">600</property>
     <property name="default-height">600</property>
     <property name="title" translatable="yes">Online Accounts</property>
-    <!-- FIXME icon -->
-    <property name="icon-name">cs-online-accounts</property>
+    <property name="icon-name">preferences-online-accounts</property>
     <child>
       <object class="GtkOverlay">
         <property name="visible">True</property>

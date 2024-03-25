@@ -37,6 +37,8 @@ struct _OaWindow
   GtkWidget *stack;
   GtkWidget *accounts_vbox;
 
+  GtkWidget *info_window;
+
   guint      remove_account_timeout_id;
 };
 
@@ -1031,9 +1033,18 @@ on_remove_button_clicked (OaWindow *window)
 static void
 on_more_info_clicked (OaWindow *window)
 {
+    if (window->info_window != NULL)
+    {
+        gtk_window_present (GTK_WINDOW (window->info_window));
+        return;
+    }
+
     GtkBuilder *builder = gtk_builder_new_from_resource ("/org/x/gnome-online-accounts-gtk/online-accounts-info.ui");
     GtkWidget *info_window = GTK_WIDGET (gtk_builder_get_object (builder, "info_window"));
     gtk_window_set_application (GTK_WINDOW (info_window), gtk_window_get_application (GTK_WINDOW (window)));
+
+    window->info_window = info_window;
+    g_object_add_weak_pointer (G_OBJECT (info_window), (gpointer *) &window->info_window);
 
     gtk_window_set_transient_for (GTK_WINDOW (info_window), GTK_WINDOW (window));
     gtk_widget_show_all (info_window);
