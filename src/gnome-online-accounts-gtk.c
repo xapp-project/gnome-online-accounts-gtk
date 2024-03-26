@@ -28,24 +28,16 @@ struct _OaWindow
     GtkWidget *accounts_listbox;
     GtkWidget *providers_listbox;
 
-    GtkWidget *offline_label;
+    GtkWidget *offline_revealer;
 };
 
 G_DEFINE_TYPE (OaWindow, oa_window, GTK_TYPE_APPLICATION_WINDOW)
-
-static void
-on_info_button_clicked (GtkButton  *button,
-                        OaWindow *window)
-{
-    g_printerr ("INFO HERE\n");
-}
 
 static void
 show_account_cb (GoaProvider  *provider,
                  GAsyncResult *res,
                  gpointer      user_data)
 {
-    OaWindow *window = OA_WINDOW (user_data);
     GError *error = NULL;
 
     if (!goa_provider_show_account_finish (provider, res, &error))
@@ -449,7 +441,7 @@ oa_window_init (OaWindow *window)
     GNetworkMonitor *monitor = g_network_monitor_get_default ();
 
     g_object_bind_property (monitor, "network-available",
-                            window->offline_label, "visible",
+                            window->offline_revealer, "reveal-child",
                             G_BINDING_SYNC_CREATE | G_BINDING_INVERT_BOOLEAN);
 
     g_object_bind_property (monitor, "network-available",
@@ -469,7 +461,7 @@ oa_window_class_init (OaWindowClass *class)
 
   gtk_widget_class_bind_template_child (widget_class, OaWindow, accounts_frame);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, accounts_listbox);
-  gtk_widget_class_bind_template_child (widget_class, OaWindow, offline_label);
+  gtk_widget_class_bind_template_child (widget_class, OaWindow, offline_revealer);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, providers_listbox);
 
   gtk_widget_class_bind_template_callback (widget_class, on_account_row_activated);
