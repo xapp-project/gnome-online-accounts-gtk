@@ -485,10 +485,13 @@ oa_window_new (void)
 static void
 on_app_activate (GtkApplication *app, gpointer user_data)
 {
-    OaWindow *window;
+    static OaWindow *window = NULL;
 
-    window = oa_window_new ();
-    gtk_window_set_application (GTK_WINDOW (window), app);
+    if (window == NULL)
+    {
+        window = oa_window_new ();
+        gtk_window_set_application (GTK_WINDOW (window), app);
+    }
 
     gtk_window_present (GTK_WINDOW (window));
 }
