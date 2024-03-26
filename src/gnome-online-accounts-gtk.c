@@ -37,8 +37,6 @@ struct _OaWindow
   GtkWidget *stack;
   GtkWidget *accounts_vbox;
 
-  GtkWidget *info_window;
-
   guint      remove_account_timeout_id;
 };
 
@@ -81,7 +79,6 @@ static void on_notification_closed (GtkButton  *button,
 
 static void on_undo_button_clicked (GtkButton  *button,
                                     OaWindow *window);
-static void on_more_info_clicked (OaWindow *window);
 
 enum {
   PROP_0,
@@ -599,7 +596,6 @@ oa_window_class_init (OaWindowClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, on_provider_row_activated);
   gtk_widget_class_bind_template_callback (widget_class, on_remove_button_clicked);
   gtk_widget_class_bind_template_callback (widget_class, on_undo_button_clicked);
-  gtk_widget_class_bind_template_callback (widget_class, on_more_info_clicked);
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
@@ -1028,27 +1024,6 @@ on_remove_button_clicked (OaWindow *window)
   window->remove_account_timeout_id = g_timeout_add_seconds (10, on_remove_account_timeout, window);
 
   g_free (label);
-}
-
-static void
-on_more_info_clicked (OaWindow *window)
-{
-    if (window->info_window != NULL)
-    {
-        gtk_window_present (GTK_WINDOW (window->info_window));
-        return;
-    }
-
-    GtkBuilder *builder = gtk_builder_new_from_resource ("/org/x/gnome-online-accounts-gtk/online-accounts-info.ui");
-    GtkWidget *info_window = GTK_WIDGET (gtk_builder_get_object (builder, "info_window"));
-    gtk_window_set_application (GTK_WINDOW (info_window), gtk_window_get_application (GTK_WINDOW (window)));
-
-    window->info_window = info_window;
-    g_object_add_weak_pointer (G_OBJECT (info_window), (gpointer *) &window->info_window);
-
-    gtk_window_set_transient_for (GTK_WINDOW (info_window), GTK_WINDOW (window));
-    gtk_widget_show_all (info_window);
-    gtk_window_present (GTK_WINDOW (info_window));
 }
 
 static OaWindow *

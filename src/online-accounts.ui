@@ -102,16 +102,6 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkButton" id="info_button">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">Information about GNOME Online Accounts</property>
-                        <property name="image">more_info_image</property>
-                        <property name="always-show-image">True</property>
-                        <signal name="clicked" handler="on_more_info_clicked" object="OaWindow" swapped="yes" />
-                      </object>
-                    </child>
-                    <child>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
