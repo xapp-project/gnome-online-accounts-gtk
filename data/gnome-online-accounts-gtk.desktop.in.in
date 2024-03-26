@@ -2,5 +2,5 @@
 Name=Online Accounts
 Comment=Connect to your data in the cloud
 Type=Application
-Icon=cs-online-accounts
+Icon=gnome-online-accounts-gtk
 Exec=@bindir@/gnome-online-accounts-gtk

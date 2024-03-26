@@ -6,7 +6,7 @@
     <property name="default-width">600</property>
     <property name="default-height">600</property>
     <property name="title">Online Accounts</property>
-    <property name="icon-name">cs-online-accounts</property>
+    <property name="icon-name">gnome-online-accounts-gtk</property>
     <child type="titlebar">
       <object class="GtkHeaderBar" id="main-header">
         <property name="title-widget">
