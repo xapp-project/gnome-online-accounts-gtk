@@ -36,6 +36,7 @@ struct _OaWindow
   GtkWidget *remove_account_button;
   GtkWidget *stack;
   GtkWidget *accounts_vbox;
+  GtkWidget *accounts_label;
 
   guint      remove_account_timeout_id;
 };
@@ -494,6 +495,21 @@ oa_window_finalize (GObject *object)
 }
 
 static void
+set_accounts_label_visibility (OaWindow *window) {
+  GList *children;
+  int n_rows;
+  children = gtk_container_get_children (GTK_CONTAINER (window->accounts_listbox));
+  n_rows = g_list_length (children);
+  if (n_rows > 0) {
+    gtk_widget_show (window->accounts_label);
+  }
+  else {
+    gtk_widget_hide (window->accounts_label);
+  }
+  g_list_free (children);
+}
+
+static void
 oa_window_init (OaWindow *window)
 {
   GError *error;
@@ -561,6 +577,8 @@ oa_window_init (OaWindow *window)
   fill_accounts_listbox (window);
   goa_provider_get_all (get_all_providers_cb, window);
 
+  set_accounts_label_visibility (window);
+
   gtk_widget_show (GTK_WIDGET (window));
 }
 
@@ -589,6 +607,7 @@ oa_window_class_init (OaWindowClass *klass)
   gtk_widget_class_bind_template_child (widget_class, OaWindow, providers_listbox);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, remove_account_button);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, stack);
+  gtk_widget_class_bind_template_child (widget_class, OaWindow, accounts_label);
 
   gtk_widget_class_bind_template_callback (widget_class, on_edit_account_dialog_delete_event);
   gtk_widget_class_bind_template_callback (widget_class, on_listbox_row_activated);
@@ -729,8 +748,9 @@ fill_accounts_listbox (OaWindow *window)
     }
   else
     {
-      for (l = accounts; l != NULL; l = l->next)
+      for (l = accounts; l != NULL; l = l->next) {
         on_account_added (window->client, l->data, window);
+      }
     }
 
   g_list_free_full (accounts, g_object_unref);
@@ -869,6 +889,8 @@ on_account_added (GoaClient *client,
 
   g_clear_pointer (&title, g_free);
   g_clear_object (&gicon);
+
+  set_accounts_label_visibility (window);
 }
 
 static void
@@ -891,6 +913,7 @@ on_account_removed (GoaClient *client,
 {
   OaWindow *window = user_data;
   modify_row_for_account (window, object, remove_row_for_account);
+  set_accounts_label_visibility (window);
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
