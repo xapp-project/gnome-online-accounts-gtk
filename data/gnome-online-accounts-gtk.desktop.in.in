@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Online Accounts
+Comment=Connect to your data in the cloud
 Type=Application
 Icon=cs-online-accounts
 Exec=@bindir@/gnome-online-accounts-gtk
