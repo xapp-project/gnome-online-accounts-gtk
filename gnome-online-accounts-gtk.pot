@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-online-accounts-gtk package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-online-accounts-gtk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 14:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/gnome-online-accounts-gtk.desktop.in.in:3 src/online-accounts.ui:279
+msgid "Online Accounts"
+msgstr ""
+
+#: data/gnome-online-accounts-gtk.desktop.in.in:4 src/online-accounts.ui:280
+msgid "Connect to your data in the cloud"
+msgstr ""
+
+#: data/gnome-online-accounts-gtk.desktop.in.in:7
+msgid ""
+"google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
+"kerberos;imap;smtp;pocket;readitlater;account;"
+msgstr ""
+
+#: src/gnome-online-accounts-gtk.c:222
+msgid "Online Account"
+msgstr ""
+
+#: src/gnome-online-accounts-gtk.c:634
+#, c-format
+msgid "%s Account"
+msgstr ""
+
+#: src/gnome-online-accounts-gtk.c:933
+msgid "Error removing account"
+msgstr ""
+
+#: src/gnome-online-accounts-gtk.c:998
+#, c-format
+msgid "<b>%s</b> removed"
+msgstr ""
+
+#: src/online-accounts.ui:49
+msgid "No internet connection - connect to set up new online accounts"
+msgstr ""
+
+#: src/online-accounts.ui:63
+msgid "Accounts"
+msgstr ""
+
+#: src/online-accounts.ui:99
+msgid "Providers"
+msgstr ""
+
+#: src/online-accounts.ui:136
+msgid "Notes"
+msgstr ""
+
+#: src/online-accounts.ui:153
+msgid ""
+"The providers and authentication framework are provided by GNOME libraries "
+"(libgoa and libgoa-backend)."
+msgstr ""
+
+#: src/online-accounts.ui:231
+msgid "Undo"
+msgstr ""
+
+#: src/online-accounts.ui:347
+msgid "Remove Account"
+msgstr ""
