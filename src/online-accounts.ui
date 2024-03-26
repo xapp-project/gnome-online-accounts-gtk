@@ -8,6 +8,7 @@
     <property name="default-height">600</property>
     <property name="title" translatable="yes">Online Accounts</property>
     <property name="icon-name">preferences-online-accounts</property>
+    <property name="window-position">center</property>
     <child>
       <object class="GtkOverlay">
         <property name="visible">True</property>
@@ -186,6 +187,7 @@
     <property name="use_header_bar">1</property>
     <property name="resizable">False</property>
     <property name="modal">True</property>
+    <property name="window-position">center</property>
     <signal name="delete-event" handler="on_edit_account_dialog_delete_event" object="OaWindow" swapped="yes" />
     <child type="titlebar">
       <object class="GtkHeaderBar" id="edit_account_headerbar">
