@@ -30,7 +30,7 @@ struct _OaWindow
   GtkWidget *new_account_vbox;
   GtkWidget *notification_label;
   GtkWidget *notification_revealer;
-  GtkWidget *offline_label;
+  GtkWidget *offline_revealer;
   GtkWidget *providers_listbox;
   GtkWidget *remove_account_button;
   GtkWidget *stack;
@@ -499,7 +499,7 @@ oa_window_init (OaWindow *window)
   monitor = g_network_monitor_get_default();
 
   g_object_bind_property (monitor, "network-available",
-                          window->offline_label, "visible",
+                          window->offline_revealer, "reveal-child",
                           G_BINDING_SYNC_CREATE | G_BINDING_INVERT_BOOLEAN);
 
   g_object_bind_property (monitor, "network-available",
@@ -561,7 +561,7 @@ oa_window_class_init (OaWindowClass *klass)
   gtk_widget_class_bind_template_child (widget_class, OaWindow, new_account_vbox);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, notification_label);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, notification_revealer);
-  gtk_widget_class_bind_template_child (widget_class, OaWindow, offline_label);
+  gtk_widget_class_bind_template_child (widget_class, OaWindow, offline_revealer);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, providers_listbox);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, remove_account_button);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, stack);
