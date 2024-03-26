@@ -114,37 +114,6 @@
                             <property name="position">4</property>
                           </packing>
                         </child>
-                        <child>
-                          <object class="GtkLabel" id="notes_label">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="margin-top">20</property>
-                            <property name="label" translatable="yes">Notes</property>
-                            <property name="xalign">0</property>
-                            <attributes>
-                              <attribute name="weight" value="bold"/>
-                            </attributes>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">5</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="halign">start</property>
-                            <property name="label" translatable="yes">The providers and authentication framework are provided by GNOME libraries (libgoa and libgoa-backend).</property>
-                            <property name="wrap">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">6</property>
-                          </packing>
-                        </child>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -330,7 +299,20 @@
         <property name="subtitle" translatable="yes">Connect to your data in the cloud</property>
         <property name="show-close-button">True</property>
         <child>
-          <placeholder/>
+          <object class="GtkMenuButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <property name="popup">main_menu</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">open-menu-symbolic</property>
+              </object>
+            </child>
+          </object>
         </child>
       </object>
     </child>
@@ -433,5 +415,9 @@
         <property name="show-close-button">True</property>
       </object>
     </child>
+  </object>
+  <object class="GtkMenu" id="main_menu">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
   </object>
 </interface>

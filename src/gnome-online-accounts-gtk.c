@@ -36,6 +36,7 @@ struct _OaWindow
   GtkWidget *stack;
   GtkWidget *accounts_vbox;
   GtkWidget *accounts_label;
+  GtkWidget *main_menu;
 
   guint      remove_account_timeout_id;
 };
@@ -252,10 +253,7 @@ sort_providers_func (GtkListBoxRow *a,
                      gpointer       user_data)
 {
   GoaProvider *a_provider, *b_provider;
-  OaWindow *window;
   gboolean a_branded, b_branded;
-
-  window = user_data;
 
   a_provider = g_object_get_data (G_OBJECT (a), "goa-provider");
   b_provider = g_object_get_data (G_OBJECT (b), "goa-provider");
@@ -469,10 +467,29 @@ set_accounts_label_visibility (OaWindow *window) {
 }
 
 static void
+show_about_dialog (GtkMenuItem *item, gpointer     user_data)
+{
+  GtkAboutDialog *dialog;
+
+  dialog = GTK_ABOUT_DIALOG (gtk_about_dialog_new ());
+
+  gtk_about_dialog_set_program_name (dialog, "GNOME Online Accounts GTK");
+  gtk_about_dialog_set_version (dialog, VERSION);
+  gtk_about_dialog_set_license_type (dialog, GTK_LICENSE_GPL_3_0);
+  gtk_about_dialog_set_website (dialog, "https://www.github.com/linuxmint/gnome-online-accounts-gtk");
+  gtk_about_dialog_set_logo_icon_name (dialog, "gnome-online-accounts-gtk");
+  gtk_dialog_run (GTK_DIALOG (dialog));
+  gtk_widget_destroy (GTK_WIDGET (dialog));
+}
+
+static void
 oa_window_init (OaWindow *window)
 {
   GError *error;
   GNetworkMonitor *monitor;
+  GtkWidget *menu_item;
+  GtkWidget *image;
+  GIcon *icon;
 
   g_resources_register (oa_resources_get_resource ());
 
@@ -538,6 +555,19 @@ oa_window_init (OaWindow *window)
 
   set_accounts_label_visibility (window);
 
+  icon = g_content_type_get_symbolic_icon ("help-about-symbolic");
+  image = gtk_image_new_from_gicon (icon, GTK_ICON_SIZE_MENU);
+  g_object_unref (icon);
+
+  menu_item = gtk_image_menu_item_new_with_label (_("About"));
+  gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu_item), image);
+
+  g_signal_connect (menu_item, "activate",
+        G_CALLBACK (show_about_dialog),
+        window);
+  gtk_widget_show (menu_item);
+  gtk_menu_shell_append (GTK_MENU_SHELL (window->main_menu), menu_item);
+
   gtk_widget_show (GTK_WIDGET (window));
 }
 
@@ -566,6 +596,7 @@ oa_window_class_init (OaWindowClass *klass)
   gtk_widget_class_bind_template_child (widget_class, OaWindow, remove_account_button);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, stack);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, accounts_label);
+  gtk_widget_class_bind_template_child (widget_class, OaWindow, main_menu);
 
   gtk_widget_class_bind_template_callback (widget_class, on_edit_account_dialog_delete_event);
   gtk_widget_class_bind_template_callback (widget_class, on_listbox_row_activated);
