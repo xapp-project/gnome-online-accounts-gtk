@@ -29,7 +29,6 @@ struct _OaWindow
     GtkWidget *providers_listbox;
 
     GtkWidget *offline_label;
-    GtkWidget *info_button;
 };
 
 G_DEFINE_TYPE (OaWindow, oa_window, GTK_TYPE_APPLICATION_WINDOW)
@@ -472,11 +471,9 @@ oa_window_class_init (OaWindowClass *class)
   gtk_widget_class_bind_template_child (widget_class, OaWindow, accounts_listbox);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, offline_label);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, providers_listbox);
-  gtk_widget_class_bind_template_child (widget_class, OaWindow, info_button);
 
   gtk_widget_class_bind_template_callback (widget_class, on_account_row_activated);
   gtk_widget_class_bind_template_callback (widget_class, on_provider_row_activated);
-  gtk_widget_class_bind_template_callback (widget_class, on_info_button_clicked);
 }
 
 static OaWindow *

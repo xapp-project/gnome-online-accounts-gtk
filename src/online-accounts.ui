@@ -6,8 +6,36 @@
     <property name="default-width">600</property>
     <property name="default-height">600</property>
     <property name="title">Online Accounts</property>
-    <!-- FIXME icon -->
     <property name="icon-name">cs-online-accounts</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="main-header">
+        <property name="title-widget">
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="valign">center</property>
+            <property name="hexpand">1</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">Online Accounts</property>
+                <property name="single-line-mode">True</property>
+                <style>
+                  <class name="title"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">Connect to your data in the cloud</property>
+                <property name="single-line-mode">True</property>
+                <style>
+                  <class name="subtitle"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </property>
+      </object>
+    </child>
     <child>
       <object class="GtkOverlay">
         <property name="child">
