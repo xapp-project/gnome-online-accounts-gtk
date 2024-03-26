@@ -27,7 +27,6 @@ struct _OaWindow
   GtkWidget *accounts_listbox;
   GtkWidget *edit_account_dialog;
   GtkWidget *edit_account_headerbar;
-  GtkWidget *more_providers_row;
   GtkWidget *new_account_vbox;
   GtkWidget *notification_label;
   GtkWidget *notification_revealer;
@@ -202,7 +201,6 @@ add_provider_row (OaWindow  *window,
                   GoaProvider *provider)
 {
   GIcon *icon;
-  GoaProviderFeatures features;
   GtkWidget *image;
   GtkWidget *label;
   GtkWidget *row;
@@ -239,11 +237,7 @@ add_provider_row (OaWindow  *window,
   gtk_label_set_markup (GTK_LABEL (label), markup);
   gtk_container_add (GTK_CONTAINER (row_grid), label);
 
-  /* Check if the row should be shown initially */
-  features = goa_provider_get_provider_features (provider);
-
-  if ((features & GOA_PROVIDER_FEATURE_BRANDED) != 0)
-    gtk_widget_show_all (row);
+  gtk_widget_show_all (row);
 
   gtk_container_add (GTK_CONTAINER (window->providers_listbox), row);
 
@@ -263,11 +257,6 @@ sort_providers_func (GtkListBoxRow *a,
 
   window = user_data;
 
-  if (a == GTK_LIST_BOX_ROW (window->more_providers_row))
-    return 1;
-  else if (b == GTK_LIST_BOX_ROW (window->more_providers_row))
-    return -1;
-
   a_provider = g_object_get_data (G_OBJECT (a), "goa-provider");
   b_provider = g_object_get_data (G_OBJECT (b), "goa-provider");
 
@@ -283,29 +272,6 @@ sort_providers_func (GtkListBoxRow *a,
     }
 
   return gtk_list_box_row_get_index (b) - gtk_list_box_row_get_index (a);
-}
-
-static void
-show_non_branded_providers (OaWindow *window)
-{
-  GList *children, *l;
-
-  children = gtk_container_get_children (GTK_CONTAINER (window->providers_listbox));
-
-  for (l = children; l != NULL; l = l->next)
-    {
-      GoaProvider *provider = g_object_get_data (l->data, "goa-provider");
-
-      if (!provider)
-        continue;
-
-      if ((goa_provider_get_provider_features (provider) & GOA_PROVIDER_FEATURE_BRANDED) == 0)
-        gtk_widget_show_all (l->data);
-    }
-
-  gtk_widget_hide (window->more_providers_row);
-
-  g_list_free (children);
 }
 
 static void
@@ -355,13 +321,6 @@ on_provider_row_activated (OaWindow    *window,
                            GtkListBoxRow *activated_row)
 {
   GoaProvider *provider;
-
-  /* Show More row */
-  if (activated_row == GTK_LIST_BOX_ROW (window->more_providers_row))
-    {
-      show_non_branded_providers (window);
-      return;
-    }
 
   provider = g_object_get_data (G_OBJECT (activated_row), "goa-provider");
 
@@ -599,7 +558,6 @@ oa_window_class_init (OaWindowClass *klass)
   gtk_widget_class_bind_template_child (widget_class, OaWindow, accounts_vbox);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, edit_account_dialog);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, edit_account_headerbar);
-  gtk_widget_class_bind_template_child (widget_class, OaWindow, more_providers_row);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, new_account_vbox);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, notification_label);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, notification_revealer);

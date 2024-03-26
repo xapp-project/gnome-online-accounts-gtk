@@ -7,7 +7,7 @@
     <property name="can-focus">False</property>
     <property name="window-position">center</property>
     <property name="default-width">600</property>
-    <property name="default-height">600</property>
+    <property name="default-height">470</property>
     <property name="icon-name">preferences-online-accounts</property>
     <child>
       <object class="GtkOverlay">
@@ -121,20 +121,6 @@
                                 <property name="can-focus">False</property>
                                 <property name="selection-mode">none</property>
                                 <signal name="row-activated" handler="on_provider_row_activated" object="OaWindow" swapped="yes"/>
-                                <child>
-                                  <object class="GtkListBoxRow" id="more_providers_row">
-                                    <property name="visible">True</property>
-                                    <property name="can-focus">True</property>
-                                    <child>
-                                      <object class="GtkImage">
-                                        <property name="visible">True</property>
-                                        <property name="can-focus">False</property>
-                                        <property name="hexpand">True</property>
-                                        <property name="icon-name">view-more-symbolic</property>
-                                      </object>
-                                    </child>
-                                  </object>
-                                </child>
                               </object>
                             </child>
                           </object>
