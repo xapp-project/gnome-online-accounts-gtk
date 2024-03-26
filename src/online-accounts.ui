@@ -27,8 +27,6 @@
                   <object class="GtkGrid">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="margin-left">40</property>
-                    <property name="margin-right">40</property>
                     <property name="margin-start">40</property>
                     <property name="margin-end">40</property>
                     <property name="margin-top">20</property>
@@ -61,7 +59,7 @@
                           <object class="GtkLabel" id="accounts_label">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="margin-top">24</property>
+                            <property name="margin-top">20</property>
                             <property name="label" translatable="yes">Accounts</property>
                             <property name="xalign">0</property>
                             <attributes>
@@ -94,10 +92,10 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel">
+                          <object class="GtkLabel" id="providers_label">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="margin-top">24</property>
+                            <property name="margin-top">20</property>
                             <property name="label" translatable="yes">Providers</property>
                             <property name="xalign">0</property>
                             <attributes>
@@ -128,6 +126,37 @@
                             <property name="expand">False</property>
                             <property name="fill">True</property>
                             <property name="position">4</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="notes_label">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="margin-top">20</property>
+                            <property name="label" translatable="yes">Notes</property>
+                            <property name="xalign">0</property>
+                            <attributes>
+                              <attribute name="weight" value="bold"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">5</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">start</property>
+                            <property name="label" translatable="yes">The providers and authentication framework are provided by GNOME libraries (libgoa and libgoa-backend).</property>
+                            <property name="wrap">True</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">6</property>
                           </packing>
                         </child>
                       </object>
