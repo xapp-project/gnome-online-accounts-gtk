@@ -32,5 +32,8 @@ executable(
   'gnome-online-accounts-gtk',
   sources + resources,
   dependencies: deps,
+  c_args: [
+        '-DVERSION="@0@"'.format(meson.project_version())
+    ],
   install: true
 )
