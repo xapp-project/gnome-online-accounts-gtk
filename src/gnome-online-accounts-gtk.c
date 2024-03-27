@@ -35,7 +35,7 @@ struct _OaWindow
 G_DEFINE_TYPE (OaWindow, oa_window, GTK_TYPE_APPLICATION_WINDOW)
 
 static void
-on_about_clicked (OaWindow *window)
+on_about_clicked (gpointer user_data)
 {
     GtkAboutDialog *dialog;
 
@@ -48,6 +48,12 @@ on_about_clicked (OaWindow *window)
     gtk_about_dialog_set_logo_icon_name (dialog, "gnome-online-accounts-gtk");
 
     gtk_window_present (GTK_WINDOW (dialog));
+}
+
+static void
+on_quit_clicked (GApplication *application)
+{
+    g_application_quit (application);
 }
 
 static void
@@ -468,12 +474,10 @@ oa_window_init (OaWindow *window)
     GtkWidget *menu_button = gtk_menu_button_new ();
     gtk_menu_button_set_icon_name (GTK_MENU_BUTTON (menu_button), "open-menu-symbolic");
     gtk_header_bar_pack_start (GTK_HEADER_BAR (window->header), menu_button);
-    GIcon *icon = g_themed_icon_new ("help-about-symbolic");
-    GMenu *menu = g_menu_new ();
-    GMenuItem *about_item = g_menu_item_new (_("About"), "app.about");
-    g_object_unref (icon);
 
-    g_menu_append_item (menu, about_item);
+    GMenu *menu = g_menu_new ();
+    g_menu_append (menu, _("About"), "app.about");
+    g_menu_append (menu, _("Quit"), "app.quit");
     gtk_menu_button_set_menu_model (GTK_MENU_BUTTON (menu_button), G_MENU_MODEL (menu));
 }
 
@@ -519,7 +523,7 @@ on_app_activate (GtkApplication *app, gpointer user_data)
 
 int main(int argc, char *argv[]) {
     GtkApplication *app;
-    GAction *about_action;
+    GAction *action;
     gint ret;
 
     textdomain (GETTEXT_PACKAGE);
@@ -531,9 +535,13 @@ int main(int argc, char *argv[]) {
     g_application_set_version (G_APPLICATION (app), VERSION);
     g_application_set_option_context_summary (G_APPLICATION (app), "gnome-online-accounts-gtk: A GTK Frontend for GNOME Online Accounts");
 
-    about_action = G_ACTION (g_simple_action_new ("about", NULL));
-    g_signal_connect (about_action, "activate", G_CALLBACK (on_about_clicked), NULL);
-    g_action_map_add_action (G_ACTION_MAP (app), G_ACTION (about_action));
+    action = G_ACTION (g_simple_action_new ("about", NULL));
+    g_signal_connect_swapped (action, "activate", G_CALLBACK (on_about_clicked), NULL);
+    g_action_map_add_action (G_ACTION_MAP (app), G_ACTION (action));
+
+    action = G_ACTION (g_simple_action_new ("quit", NULL));
+    g_signal_connect_swapped (action, "activate", G_CALLBACK (on_quit_clicked), app);
+    g_action_map_add_action (G_ACTION_MAP (app), G_ACTION (action));
 
     g_signal_connect (app, "activate", G_CALLBACK (on_app_activate), NULL);
 
