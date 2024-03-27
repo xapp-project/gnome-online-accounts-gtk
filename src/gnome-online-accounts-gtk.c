@@ -28,6 +28,7 @@ struct _OaWindow
     GtkWidget *accounts_listbox;
     GtkWidget *providers_listbox;
     GtkWidget *header;
+    GtkWidget *accounts_label;
 
     GtkWidget *offline_revealer;
 };
@@ -54,6 +55,22 @@ static void
 on_quit_clicked (GApplication *application)
 {
     g_application_quit (application);
+}
+
+static void
+on_accounts_model_changed (GListModel *model,
+                           guint       position,
+                           guint       removed,
+                           guint       added,
+                           gpointer    user_data)
+{
+    OaWindow *window = OA_WINDOW (user_data);
+    gboolean has_accounts;
+
+    has_accounts = g_list_model_get_n_items (model) > 0;
+
+    gtk_widget_set_visible (window->accounts_frame, has_accounts);
+    gtk_widget_set_visible (window->accounts_label, has_accounts);
 }
 
 static void
@@ -449,6 +466,11 @@ oa_window_init (OaWindow *window)
     goa_client_new (NULL, (GAsyncReadyCallback) new_client_cb, window);
 
     window->accounts_model = G_LIST_MODEL (g_list_store_new (GOA_TYPE_OBJECT));
+    g_signal_connect (window->accounts_model,
+                      "items-changed",
+                      G_CALLBACK (on_accounts_model_changed),
+                      window);
+
     window->providers_model = G_LIST_MODEL (g_list_store_new (GOA_TYPE_PROVIDER));
     gtk_list_box_bind_model (GTK_LIST_BOX (window->accounts_listbox),
                              window->accounts_model,
@@ -496,6 +518,7 @@ oa_window_class_init (OaWindowClass *class)
   gtk_widget_class_bind_template_child (widget_class, OaWindow, offline_revealer);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, providers_listbox);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, header);
+  gtk_widget_class_bind_template_child (widget_class, OaWindow, accounts_label);
 
   gtk_widget_class_bind_template_callback (widget_class, on_account_row_activated);
   gtk_widget_class_bind_template_callback (widget_class, on_provider_row_activated);
