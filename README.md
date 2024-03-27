@@ -4,6 +4,12 @@ A GTK Frontend for GNOME Online Accounts
 
 ![image](https://i.imgur.com/8eq39QC.png)
 
+# Supported desktops/distributions
+
+GNOME Online Accounts GTK is part of the XApp project.
+
+It is designed to work in all desktop environments and all Linux distributions.
+
 # Branches
 
 The `master` branch produces 3.50.x releases, built for GKT4 and GNOME Online Acccounts 3.50.
