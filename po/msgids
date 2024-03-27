@@ -1,0 +1,17 @@
+// This file lists all the msgids used in both branches (master and 3.49)
+// This is to ensure the POT file is compatible with both branches.
+
+_("%s Account")
+_("<b>%s</b> removed")
+_("About")
+_("Accounts")
+_("Connect to your data in the cloud")
+_("Error removing account")
+_("google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;kerberos;imap;smtp;pocket;readitlater;account;")
+_("No internet connection - connect to set up new online accounts")
+_("Online Account")
+_("Online Accounts")
+_("Providers")
+_("Quit")
+_("Remove Account")
+_("Undo")
