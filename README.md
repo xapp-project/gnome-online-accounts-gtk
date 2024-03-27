@@ -1,5 +1,4 @@
 # GNOME Online Accounts GTK
-![build](https://github.com/linuxmint/gnome-online-accounts-gtk/actions/workflows/build.yml/badge.svg)
 
 A GTK Frontend for GNOME Online Accounts
 
