@@ -483,6 +483,12 @@ show_about_dialog (GtkMenuItem *item, gpointer     user_data)
 }
 
 static void
+menu_quit (GtkMenuItem *item, gpointer     user_data)
+{
+  g_application_quit (G_APPLICATION (gtk_window_get_application (GTK_WINDOW (user_data))));
+}
+
+static void
 oa_window_init (OaWindow *window)
 {
   GError *error;
@@ -561,9 +567,15 @@ oa_window_init (OaWindow *window)
 
   menu_item = gtk_image_menu_item_new_with_label (_("About"));
   gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu_item), image);
-
   g_signal_connect (menu_item, "activate",
         G_CALLBACK (show_about_dialog),
+        window);
+  gtk_widget_show (menu_item);
+  gtk_menu_shell_append (GTK_MENU_SHELL (window->main_menu), menu_item);
+
+  menu_item = gtk_image_menu_item_new_with_label (_("Quit"));
+  g_signal_connect (menu_item, "activate",
+        G_CALLBACK (menu_quit),
         window);
   gtk_widget_show (menu_item);
   gtk_menu_shell_append (GTK_MENU_SHELL (window->main_menu), menu_item);
