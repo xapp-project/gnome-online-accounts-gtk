@@ -526,13 +526,18 @@ int main(int argc, char *argv[]) {
     GAction *action;
     gint ret;
 
+    if (argc > 1 && g_strcmp0 (argv[1], "--version") == 0)
+    {
+        g_print ("gnome-online-accounts-gtk %s\n", VERSION);
+        return 0;
+    }
+
     textdomain (GETTEXT_PACKAGE);
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
 
     g_set_application_name ("gnome-online-accounts-gtk");
     app = gtk_application_new ("org.x.GnomeOnlineAccountsGtk", G_APPLICATION_DEFAULT_FLAGS);
 
-    g_application_set_version (G_APPLICATION (app), VERSION);
     g_application_set_option_context_summary (G_APPLICATION (app), "gnome-online-accounts-gtk: A GTK Frontend for GNOME Online Accounts");
 
     action = G_ACTION (g_simple_action_new ("about", NULL));
