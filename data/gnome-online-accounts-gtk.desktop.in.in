@@ -2,6 +2,7 @@
 Name=Online Accounts
 Comment=Connect to your data in the cloud
 Type=Application
+Categories=Settings;
 Icon=gnome-online-accounts-gtk
 Exec=@bindir@/gnome-online-accounts-gtk
 Keywords=google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;kerberos;imap;smtp;pocket;readitlater;account;
