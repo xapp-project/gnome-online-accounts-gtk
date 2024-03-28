@@ -29,7 +29,7 @@ if not get_option('deprecated_warnings')
 endif
 
 subdir('data')
-# subdir('po')
+subdir('po')
 subdir('src')
 
 summary({
