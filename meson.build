@@ -1,7 +1,7 @@
 project(
   'gnome-online-accounts-gtk',
   'c',
-  version: '3.49.0',
+  version: '3.49.1',
   meson_version: '>= 0.56.0',
   license: 'GPLv3.0+'
 )

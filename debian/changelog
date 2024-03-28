@@ -1,3 +1,23 @@
+gnome-online-accounts-gtk (3.49.1) virginia; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Update README.md
+
+  [ Michael Webster ]
+  * Add a Quit menu item.
+
+  [ Clement Lefebvre ]
+  * l10n: Add msgids to po/msgids
+  * l10n: Update POT
+
+  [ Michael Webster ]
+  * Remove g_application_set_version().
+
+  [ Clement Lefebvre ]
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 28 Mar 2024 11:07:38 +0000
+
 gnome-online-accounts-gtk (3.49.0) wilma; urgency=medium
 
   [ Michael Webster ]
