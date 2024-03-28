@@ -77,3 +77,12 @@ sudo ninja -C build install
 # to uninstall:
 sudo ninja -C build uninstall
 ```
+
+# Translations
+
+The translations for this project are hosted on [Launchpad](https://translations.launchpad.net/linuxmint/latest/+pots/gnome-online-accounts-gtk).
+
+The content of `po/` is overwritten when the translations are imported from Launchpad.
+
+If you want to help translating this project, please use Launchpad. Do not modify the files in `po/` directly.
+
