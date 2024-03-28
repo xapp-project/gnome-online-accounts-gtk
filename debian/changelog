@@ -1,3 +1,50 @@
+gnome-online-accounts-gtk (3.50.1) wilma; urgency=medium
+
+  [ Michael Webster ]
+  * Disable desktop file po merge until we have some po files.
+  * A few fixes, update README.
+  * More fixes
+  * Add goa to depends. Only compatible with 3.50+
+  * Update .gitignore
+
+  [ Clement Lefebvre ]
+  * Remove debug package
+
+  [ Michael Webster ]
+  * Remove Info button, add Accounts label, Change providers label to "Providers".
+  * Desktop file: Add a comment, use a generic name.
+  * Use a headerbar.
+
+  [ Clement Lefebvre ]
+  * Add an icon
+
+  [ Michael Webster ]
+  * Fix singleton behavior.
+  * Use a revealer for the offline notification.
+
+  [ Clement Lefebvre ]
+  * Update README.md
+  * Remove CI
+  * Update README.md
+
+  [ Michael Webster ]
+  * Set the version and a commandline blurb.
+  * Add a menu button and an About dialog.
+  * Add 'quit' menu option.
+
+  [ Clement Lefebvre ]
+  * Restore l10n files with 3.49 version
+  * l10n: Update POT
+
+  [ Michael Webster ]
+  * Remove g_application_set_version().
+  * Hide the accounts label and pane when there aren't any accounts.
+
+  [ Clement Lefebvre ]
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 28 Mar 2024 11:08:27 +0000
+
 gnome-online-accounts-gtk (0.0.1) wilma; urgency=medium
 
     Initial version
