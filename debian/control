@@ -16,6 +16,7 @@ Package: gnome-online-accounts-gtk
 Architecture: any
 Multi-Arch: foreign
 Depends:
+ gnome-online-accounts (>= 3.50),
  ${misc:Depends},
  ${shlibs:Depends},
 Description: GUI Utility for logging into online accounts for the
