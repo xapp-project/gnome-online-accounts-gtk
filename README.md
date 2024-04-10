@@ -12,7 +12,7 @@ It is designed to work in all desktop environments and all Linux distributions.
 
 # Branches
 
-The `master` branch produces 3.50.x releases, built for GKT4 and GNOME Online Acccounts 3.50.
+The `master` branch produces 3.50.x releases, built for GTK4 and GNOME Online Acccounts 3.50.
 
 The `3.49` branch produces 3.49.x releases, built for GTK3 and GNOME Online Accounts 3.49.
 
