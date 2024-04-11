@@ -3,6 +3,7 @@
 #include <config.h>
 
 #include <gtk/gtk.h>
+#include <adwaita.h>
 #include <glib/gi18n.h>
 
 #define GOA_API_IS_SUBJECT_TO_CHANGE
@@ -557,6 +558,8 @@ int main(int argc, char *argv[]) {
 
     textdomain (GETTEXT_PACKAGE);
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+
+    adw_init ();
 
     g_set_application_name ("gnome-online-accounts-gtk");
     app = gtk_application_new ("org.x.GnomeOnlineAccountsGtk", G_APPLICATION_DEFAULT_FLAGS);

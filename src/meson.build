@@ -16,6 +16,7 @@ deps = [
   dependency('gtk4'),
   dependency('goa-1.0', version: '>= 3.50'),
   dependency('goa-backend-1.0', version: '>= 3.50'),
+  dependency('libadwaita-1', version: '>= 1.4.0'), # track gnome-online-accounts' version
 ]
 
 resources = gnome.compile_resources('gnome-online-accounts-gtk-resources',
