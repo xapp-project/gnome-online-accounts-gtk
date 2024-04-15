@@ -496,7 +496,6 @@ oa_window_init (OaWindow *window)
 
     GtkWidget *menu_button = gtk_menu_button_new ();
     gtk_menu_button_set_icon_name (GTK_MENU_BUTTON (menu_button), "open-menu-symbolic");
-    gtk_header_bar_pack_start (GTK_HEADER_BAR (window->header), menu_button);
 
     GMenu *menu = g_menu_new ();
     g_menu_append (menu, _("About"), "app.about");
@@ -518,7 +517,6 @@ oa_window_class_init (OaWindowClass *class)
   gtk_widget_class_bind_template_child (widget_class, OaWindow, accounts_listbox);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, offline_revealer);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, providers_listbox);
-  gtk_widget_class_bind_template_child (widget_class, OaWindow, header);
   gtk_widget_class_bind_template_child (widget_class, OaWindow, accounts_label);
 
   gtk_widget_class_bind_template_callback (widget_class, on_account_row_activated);
