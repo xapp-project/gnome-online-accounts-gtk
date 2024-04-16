@@ -476,7 +476,7 @@ show_about_dialog (GtkMenuItem *item, gpointer     user_data)
   gtk_about_dialog_set_program_name (dialog, "GNOME Online Accounts GTK");
   gtk_about_dialog_set_version (dialog, VERSION);
   gtk_about_dialog_set_license_type (dialog, GTK_LICENSE_GPL_3_0);
-  gtk_about_dialog_set_website (dialog, "https://www.github.com/linuxmint/gnome-online-accounts-gtk");
+  gtk_about_dialog_set_website (dialog, "https://www.github.com/xapp-project/gnome-online-accounts-gtk");
   gtk_about_dialog_set_logo_icon_name (dialog, "gnome-online-accounts-gtk");
   gtk_dialog_run (GTK_DIALOG (dialog));
   gtk_widget_destroy (GTK_WIDGET (dialog));
