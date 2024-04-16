@@ -6,7 +6,7 @@ A GTK Frontend for GNOME Online Accounts
 
 # Supported desktops/distributions
 
-GNOME Online Accounts GTK is part of the XApp project.
+GNOME Online Accounts GTK is part of the XApp Project.
 
 It is designed to work in all desktop environments and all Linux distributions.
 
@@ -43,7 +43,7 @@ The `3.49` branch produces 3.49.x releases, built for GTK3 and GNOME Online Acco
 sudo apt install build-essential devscripts equivs git meson
 
 # clone this git repository, switch into cloned directory
-git clone https://github.com/linuxmint/gnome-online-accounts-gtk.git && cd gnome-online-accounts-gtk
+git clone https://github.com/xapp-project/gnome-online-accounts-gtk && cd gnome-online-accounts-gtk
 
 # generate build-dependency package and install it
 mk-build-deps -s sudo -i
@@ -85,4 +85,3 @@ The translations for this project are hosted on [Launchpad](https://translations
 The content of `po/` is overwritten when the translations are imported from Launchpad.
 
 If you want to help translating this project, please use Launchpad. Do not modify the files in `po/` directly.
-

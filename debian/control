@@ -1,7 +1,7 @@
 Source: gnome-online-accounts-gtk
 Section: gnome
 Priority: optional
-Maintainer: Linux Mint <root@linuxmint.com>
+Maintainer: XAPP <info@xapp-project.org>
 Build-Depends:
  debhelper-compat (= 13),
  libglib2.0-dev (>= 2.44),
@@ -10,7 +10,7 @@ Build-Depends:
  libgoa-backend-1.0-dev (>= 3.50),
  meson (>= 0.53.0),
 Standards-Version: 4.6.0
-Homepage: https://github.com/linuxmint/gnome-online-accounts-gtk
+Homepage: https://github.com/xapp-project/gnome-online-accounts-gtk
 
 Package: gnome-online-accounts-gtk
 Architecture: any
