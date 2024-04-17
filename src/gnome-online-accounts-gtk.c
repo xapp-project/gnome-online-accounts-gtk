@@ -540,7 +540,7 @@ on_app_activate (GtkApplication *app, gpointer user_data)
 
     if (window == NULL)
     {   
-        if (!getenv ("GTK_THEME")) {
+        if (!getenv ("GTK_THEME") && !getenv ("USE_LIBADWAITA_THEME")) {
             // libgoa-backend uses libAdwaita, which overrides the system theme unless GTK_THEME is set.
             // Detect the theme name (do it here before adw_init() modifies it, not in main() where GtkApplication isn't 
             // initialized yet.. GTK4 doesn't let us call gtk_init() manually unfortunately..)
@@ -555,12 +555,14 @@ on_app_activate (GtkApplication *app, gpointer user_data)
         // Initialize libAdwaita for goa-backend widgets to work properly
         adw_init ();
 
-        // Apply our stylesheet. It contains minimal styling for libAdwaita widgets.
-        provider = gtk_css_provider_new ();
-        gtk_css_provider_load_from_path (provider, STYLESHEET_PATH);
-        gtk_style_context_add_provider_for_display (gdk_display_get_default (), 
+        if (!getenv ("USE_LIBADWAITA_THEME")) {
+            // Apply our stylesheet. It contains minimal styling for libAdwaita widgets.
+            provider = gtk_css_provider_new ();
+            gtk_css_provider_load_from_path (provider, STYLESHEET_PATH);
+            gtk_style_context_add_provider_for_display (gdk_display_get_default (), 
                                                     GTK_STYLE_PROVIDER (provider),
                                                     GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+        }
 
         window = oa_window_new ();
         gtk_window_set_application (GTK_WINDOW (window), app);
