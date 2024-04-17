@@ -25,3 +25,9 @@ i18n.merge_file(
 )
 
 subdir('icons')
+
+# CSS stylesheet
+
+install_data('style.css', 
+  install_dir: join_paths(datadir, meson.project_name())
+)

@@ -1,0 +1,17 @@
+
+dialog-host label {
+	margin: 6px;
+}
+
+dialog-host button {
+	margin: 6px;
+}
+
+dialog-host clamp image {
+	-gtk-icon-size: 24px;
+}
+
+dialog-host statuspage {
+	padding-bottom: 24px;
+	padding-top: 24px;
+}

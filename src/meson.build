@@ -6,7 +6,8 @@ top_srcdir = meson.project_source_root()
 config_entries = {
     'GETTEXT_PACKAGE' : '"@0@"'.format(meson.project_name()),
     'LOCALEDIR': '"@0@"'.format(prefix / get_option('localedir')),
-    'PACKAGE_STRING': '"gnome-online-accounts-gtk @0@"'.format(meson.project_version())
+    'PACKAGE_STRING': '"gnome-online-accounts-gtk @0@"'.format(meson.project_version()),
+    'STYLESHEET_PATH': '"@0@"'.format(join_paths(prefix, datadir, meson.project_name(), 'style.css'))
 }
 config = configuration_data(config_entries)
 configure_file(output: 'config.h', configuration: config)

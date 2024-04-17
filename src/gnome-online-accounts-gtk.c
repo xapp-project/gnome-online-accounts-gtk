@@ -536,6 +536,7 @@ on_app_activate (GtkApplication *app, gpointer user_data)
 {
     static OaWindow *window = NULL;
     gchar *theme_name;
+    GtkCssProvider *provider;
 
     if (window == NULL)
     {   
@@ -553,6 +554,13 @@ on_app_activate (GtkApplication *app, gpointer user_data)
 
         // Initialize libAdwaita for goa-backend widgets to work properly
         adw_init ();
+
+        // Apply our stylesheet. It contains minimal styling for libAdwaita widgets.
+        provider = gtk_css_provider_new ();
+        gtk_css_provider_load_from_path (provider, STYLESHEET_PATH);
+        gtk_style_context_add_provider_for_display (gdk_display_get_default (), 
+                                                    GTK_STYLE_PROVIDER (provider),
+                                                    GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         window = oa_window_new ();
         gtk_window_set_application (GTK_WINDOW (window), app);
