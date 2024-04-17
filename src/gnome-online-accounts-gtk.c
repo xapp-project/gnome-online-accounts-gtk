@@ -535,9 +535,25 @@ static void
 on_app_activate (GtkApplication *app, gpointer user_data)
 {
     static OaWindow *window = NULL;
+    gchar *theme_name;
 
     if (window == NULL)
-    {
+    {   
+        if (!getenv ("GTK_THEME")) {
+            // libgoa-backend uses libAdwaita, which overrides the system theme unless GTK_THEME is set.
+            // Detect the theme name (do it here before adw_init() modifies it, not in main() where GtkApplication isn't 
+            // initialized yet.. GTK4 doesn't let us call gtk_init() manually unfortunately..)
+            g_object_get (gtk_settings_get_default (), "gtk-theme-name", &theme_name, NULL);
+            if (theme_name) {
+                printf ("Setting GTK_THEME variable to '%s'\n", theme_name);
+                setenv ("GTK_THEME", theme_name, 1);
+                g_free (theme_name);
+            }
+        }
+
+        // Initialize libAdwaita for goa-backend widgets to work properly
+        adw_init ();
+
         window = oa_window_new ();
         gtk_window_set_application (GTK_WINDOW (window), app);
     }
@@ -558,9 +574,7 @@ int main(int argc, char *argv[]) {
 
     textdomain (GETTEXT_PACKAGE);
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-
-    adw_init ();
-
+    
     g_set_application_name ("gnome-online-accounts-gtk");
     app = gtk_application_new ("org.x.GnomeOnlineAccountsGtk", G_APPLICATION_DEFAULT_FLAGS);
 
