@@ -1,3 +1,28 @@
+gnome-online-accounts-gtk (3.50.2) wilma; urgency=medium
+
+  [ Leigh Scott ]
+  * Update gnome-online-accounts-gtk.desktop - Add Categories (#1)
+  * Update gnome-online-accounts-gtk.desktop - Remove path (#2)
+  * Add depends gnome-online-accounts (#6)
+
+  [ Guanran928 ]
+  * readme: fix typo (#9)
+
+  [ Michael Webster ]
+  * Call adw_init() for libgoa's provider dialog.
+  * debian/rules: Fix build type, remove an unnecessary build option.
+
+  [ Clement Lefebvre ]
+  * Delegate ownership/maintenance to the XApp Project
+
+  [ Michael Webster ]
+  * libAdwaita: Switch to an SDD titlebar
+
+  [ Clement Lefebvre ]
+  * Remove unused code
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 21 Apr 2024 11:52:59 +0100
+
 gnome-online-accounts-gtk (3.50.1) wilma; urgency=medium
 
   [ Michael Webster ]
