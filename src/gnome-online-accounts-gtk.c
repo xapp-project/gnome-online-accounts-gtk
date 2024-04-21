@@ -37,28 +37,6 @@ struct _OaWindow
 G_DEFINE_TYPE (OaWindow, oa_window, GTK_TYPE_APPLICATION_WINDOW)
 
 static void
-on_about_clicked (gpointer user_data)
-{
-    GtkAboutDialog *dialog;
-
-    dialog = GTK_ABOUT_DIALOG (gtk_about_dialog_new ());
-
-    gtk_about_dialog_set_program_name (dialog, "GNOME Online Accounts GTK");
-    gtk_about_dialog_set_version (dialog, VERSION);
-    gtk_about_dialog_set_license_type (dialog, GTK_LICENSE_GPL_3_0);
-    gtk_about_dialog_set_website (dialog, "https://github.com/xapp-project/gnome-online-accounts-gtk");
-    gtk_about_dialog_set_logo_icon_name (dialog, "gnome-online-accounts-gtk");
-
-    gtk_window_present (GTK_WINDOW (dialog));
-}
-
-static void
-on_quit_clicked (GApplication *application)
-{
-    g_application_quit (application);
-}
-
-static void
 on_accounts_model_changed (GListModel *model,
                            guint       position,
                            guint       removed,
@@ -493,14 +471,6 @@ oa_window_init (OaWindow *window)
     g_object_bind_property (monitor, "network-available",
                             window->providers_listbox, "sensitive",
                             G_BINDING_SYNC_CREATE);
-
-    GtkWidget *menu_button = gtk_menu_button_new ();
-    gtk_menu_button_set_icon_name (GTK_MENU_BUTTON (menu_button), "open-menu-symbolic");
-
-    GMenu *menu = g_menu_new ();
-    g_menu_append (menu, _("About"), "app.about");
-    g_menu_append (menu, _("Quit"), "app.quit");
-    gtk_menu_button_set_menu_model (GTK_MENU_BUTTON (menu_button), G_MENU_MODEL (menu));
 }
 
 static void
@@ -545,7 +515,6 @@ on_app_activate (GtkApplication *app, gpointer user_data)
 
 int main(int argc, char *argv[]) {
     GtkApplication *app;
-    GAction *action;
     gint ret;
 
     if (argc > 1 && g_strcmp0 (argv[1], "--version") == 0)
@@ -563,14 +532,6 @@ int main(int argc, char *argv[]) {
     app = gtk_application_new ("org.x.GnomeOnlineAccountsGtk", G_APPLICATION_DEFAULT_FLAGS);
 
     g_application_set_option_context_summary (G_APPLICATION (app), "gnome-online-accounts-gtk: A GTK Frontend for GNOME Online Accounts");
-
-    action = G_ACTION (g_simple_action_new ("about", NULL));
-    g_signal_connect_swapped (action, "activate", G_CALLBACK (on_about_clicked), NULL);
-    g_action_map_add_action (G_ACTION_MAP (app), G_ACTION (action));
-
-    action = G_ACTION (g_simple_action_new ("quit", NULL));
-    g_signal_connect_swapped (action, "activate", G_CALLBACK (on_quit_clicked), app);
-    g_action_map_add_action (G_ACTION_MAP (app), G_ACTION (action));
 
     g_signal_connect (app, "activate", G_CALLBACK (on_app_activate), NULL);
 
