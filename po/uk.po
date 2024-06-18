@@ -1,4 +1,4 @@
-# Russian translation for linuxmint
+# Ukrainian translation for linuxmint
 # Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2024-04-28 17:02+0000\n"
-"Last-Translator: MySha_61 <Unknown>\n"
-"Language-Team: Russian <ru@li.org>\n"
+"PO-Revision-Date: 2024-03-28 16:02+0000\n"
+"Last-Translator: Rostyslav Haitkulov <Unknown>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,29 +20,29 @@ msgstr ""
 #: po/msgids:4
 #, c-format
 msgid "%s Account"
-msgstr "Учётная запись %s"
+msgstr "Обліковий запис %s"
 
 #: po/msgids:5
 #, c-format
 msgid "<b>%s</b> removed"
-msgstr "<b>%s</b> удалён"
+msgstr "<b>%s</b> вилучено"
 
 #: po/msgids:6 src/gnome-online-accounts-gtk.c:479
 msgid "About"
-msgstr "О приложении"
+msgstr "Про..."
 
 #: po/msgids:7 src/online-accounts.ui:76
 msgid "Accounts"
-msgstr "Учётные записи"
+msgstr "Облікові записи"
 
 #: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
 #: src/online-accounts.ui:28
 msgid "Connect to your data in the cloud"
-msgstr "Подключение к данным в облаке"
+msgstr "З'єднати ваші дані з хмарою"
 
 #: po/msgids:9
 msgid "Error removing account"
-msgstr "Ошибка при удалении учётной записи"
+msgstr "Помилка вилучення облікового запису"
 
 #: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
 msgid ""
@@ -55,30 +55,30 @@ msgstr ""
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
 msgstr ""
-"Нет подключения к интернету — подключитесь для настройки новых учётных "
-"записей"
+"Немає з'єднання з інтернетом - підключіться для налаштування нових облікових "
+"записів"
 
 #: po/msgids:12
 msgid "Online Account"
-msgstr "Сетевая ­учётная запись"
+msgstr "Мережевий обліковий запис"
 
 #: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
 #: src/online-accounts.ui:19
 msgid "Online Accounts"
-msgstr "Сетевые ­учётные записи"
+msgstr "Мережеві облікові записи"
 
 #: po/msgids:14
 msgid "Providers"
-msgstr "Поставщики"
+msgstr "Постачальники"
 
 #: po/msgids:15 src/gnome-online-accounts-gtk.c:480
 msgid "Quit"
-msgstr "Выйти"
+msgstr "Вийти"
 
 #: po/msgids:16
 msgid "Remove Account"
-msgstr "Удалить учётную запись"
+msgstr "Вилучити обліковий запис"
 
 #: po/msgids:17
 msgid "Undo"
-msgstr "Отменить"
+msgstr "Повернути"

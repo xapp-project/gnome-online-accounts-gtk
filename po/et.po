@@ -1,4 +1,4 @@
-# Russian translation for linuxmint
+# Estonian translation for linuxmint
 # Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2024-04-28 17:02+0000\n"
-"Last-Translator: MySha_61 <Unknown>\n"
-"Language-Team: Russian <ru@li.org>\n"
+"PO-Revision-Date: 2024-04-16 08:34+0000\n"
+"Last-Translator: vaba <Unknown>\n"
+"Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,65 +20,62 @@ msgstr ""
 #: po/msgids:4
 #, c-format
 msgid "%s Account"
-msgstr "Учётная запись %s"
+msgstr "%s konto"
 
 #: po/msgids:5
 #, c-format
 msgid "<b>%s</b> removed"
-msgstr "<b>%s</b> удалён"
+msgstr "<b>%s</b> eemaldati"
 
 #: po/msgids:6 src/gnome-online-accounts-gtk.c:479
 msgid "About"
-msgstr "О приложении"
+msgstr "Teave"
 
 #: po/msgids:7 src/online-accounts.ui:76
 msgid "Accounts"
-msgstr "Учётные записи"
+msgstr "Kasutajakontod"
 
 #: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
 #: src/online-accounts.ui:28
 msgid "Connect to your data in the cloud"
-msgstr "Подключение к данным в облаке"
+msgstr ""
 
 #: po/msgids:9
 msgid "Error removing account"
-msgstr "Ошибка при удалении учётной записи"
+msgstr "Tõrge konto eemaldamisel"
 
 #: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
 msgid ""
 "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
 "kerberos;imap;smtp;pocket;readitlater;account;"
 msgstr ""
-"google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
-"kerberos;imap;smtp;pocket;readitlater;account;"
 
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
 msgstr ""
-"Нет подключения к интернету — подключитесь для настройки новых учётных "
-"записей"
+"Interneti-ühendus puudub – uute võrgukontode seadistamiseks looge ühendus"
 
 #: po/msgids:12
 msgid "Online Account"
-msgstr "Сетевая ­учётная запись"
+msgstr "Interneti-konto"
 
 #: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
 #: src/online-accounts.ui:19
 msgid "Online Accounts"
-msgstr "Сетевые ­учётные записи"
+msgstr "Võrgus asuvad kontod"
 
 #: po/msgids:14
 msgid "Providers"
-msgstr "Поставщики"
+msgstr ""
 
 #: po/msgids:15 src/gnome-online-accounts-gtk.c:480
 msgid "Quit"
-msgstr "Выйти"
+msgstr "Välju"
 
 #: po/msgids:16
 msgid "Remove Account"
-msgstr "Удалить учётную запись"
+msgstr "Eemalda konto"
 
 #: po/msgids:17
 msgid "Undo"
-msgstr "Отменить"
+msgstr "Võta tagasi"

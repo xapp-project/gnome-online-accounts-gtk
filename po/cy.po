@@ -1,4 +1,4 @@
-# Russian translation for linuxmint
+# Welsh translation for linuxmint
 # Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2024-04-28 17:02+0000\n"
-"Last-Translator: MySha_61 <Unknown>\n"
-"Language-Team: Russian <ru@li.org>\n"
+"PO-Revision-Date: 2024-04-09 14:50+0000\n"
+"Last-Translator: Rhoslyn Prys <rprys@posteo.net>\n"
+"Language-Team: Welsh <cy@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,29 +20,29 @@ msgstr ""
 #: po/msgids:4
 #, c-format
 msgid "%s Account"
-msgstr "Учётная запись %s"
+msgstr "Cyfrif %s"
 
 #: po/msgids:5
 #, c-format
 msgid "<b>%s</b> removed"
-msgstr "<b>%s</b> удалён"
+msgstr "<b>%s</b> wedi ei dynnu"
 
 #: po/msgids:6 src/gnome-online-accounts-gtk.c:479
 msgid "About"
-msgstr "О приложении"
+msgstr "Ynghylch"
 
 #: po/msgids:7 src/online-accounts.ui:76
 msgid "Accounts"
-msgstr "Учётные записи"
+msgstr "Cyfrifon"
 
 #: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
 #: src/online-accounts.ui:28
 msgid "Connect to your data in the cloud"
-msgstr "Подключение к данным в облаке"
+msgstr "Cysylltu i'ch data yn y cwmwl"
 
 #: po/msgids:9
 msgid "Error removing account"
-msgstr "Ошибка при удалении учётной записи"
+msgstr "Gwall werth dynnu cyfrif"
 
 #: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
 msgid ""
@@ -55,30 +55,29 @@ msgstr ""
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
 msgstr ""
-"Нет подключения к интернету — подключитесь для настройки новых учётных "
-"записей"
+"Dim cysylltiad rhyngrwyd -cysylltwch er mwyn gosod cyfrifon ar-lein newydd"
 
 #: po/msgids:12
 msgid "Online Account"
-msgstr "Сетевая ­учётная запись"
+msgstr "Cyfrif Ar-lein"
 
 #: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
 #: src/online-accounts.ui:19
 msgid "Online Accounts"
-msgstr "Сетевые ­учётные записи"
+msgstr "Cyfrifon Ar-lein"
 
 #: po/msgids:14
 msgid "Providers"
-msgstr "Поставщики"
+msgstr "Darparwyr"
 
 #: po/msgids:15 src/gnome-online-accounts-gtk.c:480
 msgid "Quit"
-msgstr "Выйти"
+msgstr "Gadael"
 
 #: po/msgids:16
 msgid "Remove Account"
-msgstr "Удалить учётную запись"
+msgstr "Tynnu Cyfrif"
 
 #: po/msgids:17
 msgid "Undo"
-msgstr "Отменить"
+msgstr "Dad-wneud"
