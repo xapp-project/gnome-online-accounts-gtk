@@ -91,7 +91,11 @@ show_account (OaWindow   *window,
       goa_provider_show_account (provider,
                                  window->client,
                                  object,
+#if GTK_CHECK_VERSION(4, 15, 0)
+                                 GTK_WIDGET (window),
+#else
                                  GTK_WINDOW (window),
+#endif
                                  NULL,
                                  (GAsyncReadyCallback) show_account_cb,
                                  window);
@@ -131,7 +135,11 @@ add_account (OaWindow    *window,
 {
   goa_provider_add_account (provider,
                             window->client,
+#if GTK_CHECK_VERSION(4, 15, 0)
+                            GTK_WIDGET (window),
+#else
                             GTK_WINDOW (window),
+#endif
                             NULL,
                             (GAsyncReadyCallback) add_account_cb,
                             window);
