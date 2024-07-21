@@ -1,4 +1,4 @@
-# Turkish translation for linuxmint
+# Romanian translation for linuxmint
 # Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2024-03-29 01:21+0000\n"
-"Last-Translator: Butterfly <Unknown>\n"
-"Language-Team: Turkish <tr@li.org>\n"
+"PO-Revision-Date: 2024-07-07 09:04+0000\n"
+"Last-Translator: Vladm <Unknown>\n"
+"Language-Team: Romanian <ro@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,65 +20,65 @@ msgstr ""
 #: po/msgids:4
 #, c-format
 msgid "%s Account"
-msgstr "%s Hesabı"
+msgstr "Cont %s"
 
 #: po/msgids:5
 #, c-format
 msgid "<b>%s</b> removed"
-msgstr "<b>%s</b> silindi"
+msgstr "<b>%s</b> eliminat"
 
 #: po/msgids:6 src/gnome-online-accounts-gtk.c:479
 msgid "About"
-msgstr "Hakkında"
+msgstr "Despre"
 
 #: po/msgids:7 src/online-accounts.ui:76
 msgid "Accounts"
-msgstr "Hesaplar"
+msgstr "Conturi"
 
 #: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
 #: src/online-accounts.ui:28
 msgid "Connect to your data in the cloud"
-msgstr "Buluttaki verinize bağlantı sağlayın"
+msgstr "Conectează-te la datele tale din servicii online"
 
 #: po/msgids:9
 msgid "Error removing account"
-msgstr "Hesap silinirken hata"
+msgstr "Eroare la eliminarea contului"
 
 #: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
 msgid ""
 "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
 "kerberos;imap;smtp;pocket;readitlater;account;"
 msgstr ""
-"google;facebook;twitter;yahoo;web;çevrimiçi;sohbet;takvim;eposta;iletişim;own"
-"cloud;kerberos;imap;smtp;pocket;readitlater;hesap;"
+"google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
+"kerberos;imap;smtp;pocket;readitlater;account;cont;internet;"
 
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
 msgstr ""
-"İnternet bağlantısı yok - yeni çevrimiçi hesaplar oluşturmak için bağlantı "
-"sağlayın"
+"Nu există conexiune la internet; conectează-te pentru a configura noi "
+"conturi online"
 
 #: po/msgids:12
 msgid "Online Account"
-msgstr "Çevrimiçi Hesap"
+msgstr "Cont online"
 
 #: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
 #: src/online-accounts.ui:19
 msgid "Online Accounts"
-msgstr "Çevrimiçi Hesaplar"
+msgstr "Conturi online"
 
 #: po/msgids:14
 msgid "Providers"
-msgstr "Sağlayıcılar"
+msgstr "Furnizori"
 
 #: po/msgids:15 src/gnome-online-accounts-gtk.c:480
 msgid "Quit"
-msgstr "Kapat"
+msgstr "Închide"
 
 #: po/msgids:16
 msgid "Remove Account"
-msgstr "Hesabı Sil"
+msgstr "Suprimă contul"
 
 #: po/msgids:17
 msgid "Undo"
-msgstr "Geri"
+msgstr "Anulează"

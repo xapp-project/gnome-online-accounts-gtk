@@ -8,73 +8,74 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2024-05-13 01:58+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-07-19 01:23+0000\n"
+"Last-Translator: 张鹏 <Unknown>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-06-18 17:57+0000\n"
+"X-Launchpad-Export-Date: 2024-07-21 09:03+0000\n"
 "X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 
 #: po/msgids:4
 #, c-format
 msgid "%s Account"
-msgstr ""
+msgstr "%s 账号"
 
 #: po/msgids:5
 #, c-format
 msgid "<b>%s</b> removed"
-msgstr ""
+msgstr "<b>%s</b> 已移除"
 
 #: po/msgids:6 src/gnome-online-accounts-gtk.c:479
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #: po/msgids:7 src/online-accounts.ui:76
 msgid "Accounts"
-msgstr ""
+msgstr "帐号"
 
 #: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
 #: src/online-accounts.ui:28
 msgid "Connect to your data in the cloud"
-msgstr ""
+msgstr "连接您的云端数据"
 
 #: po/msgids:9
 msgid "Error removing account"
-msgstr ""
+msgstr "移除账号出错"
 
 #: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
 msgid ""
 "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
 "kerberos;imap;smtp;pocket;readitlater;account;"
 msgstr ""
+"谷歌;脸书;推特;雅虎;网页;在线;聊天;日历;邮件;联系;OwnCloud;Kerberos;imap;smtp;口袋;readitlater;账号;"
 
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
-msgstr ""
+msgstr "没有互联网连接 - 连接后再设置新的在线账号"
 
 #: po/msgids:12
 msgid "Online Account"
-msgstr ""
+msgstr "在线账号"
 
 #: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
 #: src/online-accounts.ui:19
 msgid "Online Accounts"
-msgstr ""
+msgstr "在线账号"
 
 #: po/msgids:14
 msgid "Providers"
-msgstr ""
+msgstr "提供者"
 
 #: po/msgids:15 src/gnome-online-accounts-gtk.c:480
 msgid "Quit"
-msgstr ""
+msgstr "退出"
 
 #: po/msgids:16
 msgid "Remove Account"
-msgstr ""
+msgstr "移除账号"
 
 #: po/msgids:17
 msgid "Undo"
-msgstr ""
+msgstr "撤消"

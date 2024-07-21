@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2024-05-05 11:30+0000\n"
-"Last-Translator: Aril Apria Susanto <Unknown>\n"
+"PO-Revision-Date: 2024-06-21 06:06+0000\n"
+"Last-Translator: Dimas Harry <harry.dimas@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-06-18 17:57+0000\n"
+"X-Launchpad-Export-Date: 2024-07-21 09:03+0000\n"
 "X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 
 #: po/msgids:4
@@ -25,24 +25,24 @@ msgstr "Akun %s"
 #: po/msgids:5
 #, c-format
 msgid "<b>%s</b> removed"
-msgstr ""
+msgstr "<b>%s</b> dihapus"
 
 #: po/msgids:6 src/gnome-online-accounts-gtk.c:479
 msgid "About"
-msgstr ""
+msgstr "Tentang"
 
 #: po/msgids:7 src/online-accounts.ui:76
 msgid "Accounts"
-msgstr ""
+msgstr "Akun"
 
 #: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
 #: src/online-accounts.ui:28
 msgid "Connect to your data in the cloud"
-msgstr ""
+msgstr "Hubungkan ke data Anda di awan"
 
 #: po/msgids:9
 msgid "Error removing account"
-msgstr ""
+msgstr "Galat saat menghapus akun"
 
 #: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
 msgid ""
@@ -55,28 +55,29 @@ msgstr ""
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
 msgstr ""
+"Tidak ada koneksi internet - sambungkan untuk membuat akun daring baru"
 
 #: po/msgids:12
 msgid "Online Account"
-msgstr ""
+msgstr "Akun Daring"
 
 #: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
 #: src/online-accounts.ui:19
 msgid "Online Accounts"
-msgstr ""
+msgstr "Akun-akun Daring"
 
 #: po/msgids:14
 msgid "Providers"
-msgstr ""
+msgstr "Penyedia"
 
 #: po/msgids:15 src/gnome-online-accounts-gtk.c:480
 msgid "Quit"
-msgstr ""
+msgstr "Keluar"
 
 #: po/msgids:16
 msgid "Remove Account"
-msgstr ""
+msgstr "Hapus Akun"
 
 #: po/msgids:17
 msgid "Undo"
-msgstr ""
+msgstr "Batal"
