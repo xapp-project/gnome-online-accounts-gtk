@@ -1,3 +1,13 @@
+gnome-online-accounts-gtk (3.50.4) wilma; urgency=medium
+
+  [ Leigh Scott ]
+  * Fix compile issue with gtk-4.15.0 (#14)
+
+  [ Clement Lefebvre ]
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 21 Jul 2024 10:29:06 +0100
+
 gnome-online-accounts-gtk (3.50.3) wilma; urgency=medium
 
   * l10n: Update translations
