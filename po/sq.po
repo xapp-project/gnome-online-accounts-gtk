@@ -1,4 +1,4 @@
-# Slovenian translation for linuxmint
+# Albanian translation for linuxmint
 # Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2024-06-08 16:37+0000\n"
-"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
-"Language-Team: Slovenian <sl@li.org>\n"
+"PO-Revision-Date: 2024-11-07 15:14+0000\n"
+"Last-Translator: edon <Unknown>\n"
+"Language-Team: Albanian <sq@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,65 +20,61 @@ msgstr ""
 #: po/msgids:4
 #, c-format
 msgid "%s Account"
-msgstr "Račun %s"
+msgstr "Llogaria %s"
 
 #: po/msgids:5
 #, c-format
 msgid "<b>%s</b> removed"
-msgstr "<b>%s</b> je odstranjen"
+msgstr ""
 
 #: po/msgids:6 src/gnome-online-accounts-gtk.c:479
 msgid "About"
-msgstr "O programu"
+msgstr "Rreth nesh"
 
 #: po/msgids:7 src/online-accounts.ui:76
 msgid "Accounts"
-msgstr "Računi"
+msgstr "Llogaritë"
 
 #: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
 #: src/online-accounts.ui:28
 msgid "Connect to your data in the cloud"
-msgstr "Povežite se svojimi podatki v oblaku"
+msgstr ""
 
 #: po/msgids:9
 msgid "Error removing account"
-msgstr "Napaka pri odstranjevanju računa"
+msgstr "Gabim në heqjen e llogarisë"
 
 #: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
 msgid ""
 "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
 "kerberos;imap;smtp;pocket;readitlater;account;"
 msgstr ""
-"google;facebook;twitter;yahoo;web;online;spletni;splet;klepe;chat;calendar;ko"
-"ledar;mail;pošta;stik;contact;owncloud;kerberos;imap;smtp;pocket;readitlater;"
-"account;račun;"
 
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
 msgstr ""
-"Brez internetne povezave - povežite se, da vzpostavite nove spletne račune"
 
 #: po/msgids:12
 msgid "Online Account"
-msgstr "Spletni račun"
+msgstr ""
 
 #: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
 #: src/online-accounts.ui:19
 msgid "Online Accounts"
-msgstr "Spletni računi"
+msgstr "Llogaritë Online"
 
 #: po/msgids:14
 msgid "Providers"
-msgstr "Ponudniki"
+msgstr ""
 
 #: po/msgids:15 src/gnome-online-accounts-gtk.c:480
 msgid "Quit"
-msgstr "Izhod"
+msgstr ""
 
 #: po/msgids:16
 msgid "Remove Account"
-msgstr "Odstrani račun"
+msgstr ""
 
 #: po/msgids:17
 msgid "Undo"
-msgstr "Razveljavi"
+msgstr ""
