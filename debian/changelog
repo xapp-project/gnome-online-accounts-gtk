@@ -1,3 +1,9 @@
+gnome-online-accounts-gtk (3.50.6) xia; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 06 Jan 2025 14:01:21 +0000
+
 gnome-online-accounts-gtk (3.50.5) xia; urgency=medium
 
   * l10n: Update translations
