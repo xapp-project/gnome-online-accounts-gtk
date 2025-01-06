@@ -1,4 +1,4 @@
-# Hebrew translation for linuxmint
+# Amharic translation for linuxmint
 # Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2025-01-04 11:30+0000\n"
-"Last-Translator: Avi Markovitz <avi.markovitz@gmail.com>\n"
-"Language-Team: Hebrew <he@li.org>\n"
+"PO-Revision-Date: 2024-12-31 16:56+0000\n"
+"Last-Translator: samson <Unknown>\n"
+"Language-Team: Amharic <am@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,63 +20,61 @@ msgstr ""
 #: po/msgids:4
 #, c-format
 msgid "%s Account"
-msgstr "חשבון %s"
+msgstr "%s መግለጫ"
 
 #: po/msgids:5
 #, c-format
 msgid "<b>%s</b> removed"
-msgstr "חשבון <b>%s</b> הוסר"
+msgstr "<b>%s</b> ተወግዷል"
 
 #: po/msgids:6 src/gnome-online-accounts-gtk.c:479
 msgid "About"
-msgstr "על אודות"
+msgstr "ስለ"
 
 #: po/msgids:7 src/online-accounts.ui:76
 msgid "Accounts"
-msgstr "חשבונות"
+msgstr "መግለጫ"
 
 #: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
 #: src/online-accounts.ui:28
 msgid "Connect to your data in the cloud"
-msgstr "התחברות למידע אישי בענן"
+msgstr ""
 
 #: po/msgids:9
 msgid "Error removing account"
-msgstr "שגיאה בהסרת חשבון"
+msgstr "ስህተት ተፈጥሯል መግለጫ በ ማጥፋት ላይ እንዳለ"
 
 #: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
 msgid ""
 "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
 "kerberos;imap;smtp;pocket;readitlater;account;"
 msgstr ""
-"google;facebook;twitter;yahoo;רשת;מקוון;chat;calendar;דוא\"ל;קשר;owncloud;ker"
-"beros;imap;smtp;pocket;readitlater;חשבון;"
 
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
-msgstr "אין חיבור למרשתת – נא להתחבר להגדרת חשבונות מקוונים חדשים"
+msgstr ""
 
 #: po/msgids:12
 msgid "Online Account"
-msgstr "חשבון מקוון"
+msgstr "የ መስመር ላይ መግለጫ"
 
 #: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
 #: src/online-accounts.ui:19
 msgid "Online Accounts"
-msgstr "חשבונות מקוונים"
+msgstr "የ መስመር ላይ መግለጫዎች"
 
 #: po/msgids:14
 msgid "Providers"
-msgstr "ספקי־שרות"
+msgstr "አቅራቢዎች"
 
 #: po/msgids:15 src/gnome-online-accounts-gtk.c:480
 msgid "Quit"
-msgstr "יציאה"
+msgstr "ማጥፊያ"
 
 #: po/msgids:16
 msgid "Remove Account"
-msgstr "הסרת חשבון"
+msgstr "መግለጫ ማስወገጃ"
 
 #: po/msgids:17
 msgid "Undo"
-msgstr "החזרה לקדמות"
+msgstr "መተው"

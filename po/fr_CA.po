@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2024-04-28 20:28+0000\n"
-"Last-Translator: guwrt <guwrt77@gmail.com>\n"
+"PO-Revision-Date: 2024-12-28 19:53+0000\n"
+"Last-Translator: AO <Unknown>\n"
 "Language-Team: French (Canada) <fr_CA@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
-"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 
 #: po/msgids:4
 #, c-format
@@ -25,7 +25,7 @@ msgstr "Compte %s"
 #: po/msgids:5
 #, c-format
 msgid "<b>%s</b> removed"
-msgstr "<b>%s</b> supprimé"
+msgstr "<b>%s</b> a été supprimé"
 
 #: po/msgids:6 src/gnome-online-accounts-gtk.c:479
 msgid "About"
@@ -38,25 +38,26 @@ msgstr "Comptes"
 #: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
 #: src/online-accounts.ui:28
 msgid "Connect to your data in the cloud"
-msgstr "Connexion à vos données sur le nuage"
+msgstr "Connectez vous à vos données nuagiques"
 
 #: po/msgids:9
 msgid "Error removing account"
-msgstr "Erreur lors de la suppression du compte"
+msgstr "Erreur de suppression du compte"
 
 #: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
 msgid ""
 "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
 "kerberos;imap;smtp;pocket;readitlater;account;"
 msgstr ""
-"google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
-"kerberos;imap;smtp;pocket;readitlater;account;"
+"google;facebook;twitter;yahoo;web;en "
+"ligne;clavardage;chat;dialogue;calendrier;agenda;mail;courriel;contact;ownclo"
+"ud;kerberos;imap;smtp;pocket;readitlater;compte;"
 
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
 msgstr ""
-"Aucune connexion à internet. Une connexion à Internet est nécessaire pour "
-"configurer les comptes en ligne"
+"Aucune connexion à Internet n’a été détectée. Connectez-vous pour configurer "
+"de nouveaux comptes en ligne."
 
 #: po/msgids:12
 msgid "Online Account"
@@ -73,7 +74,7 @@ msgstr "Fournisseurs"
 
 #: po/msgids:15 src/gnome-online-accounts-gtk.c:480
 msgid "Quit"
-msgstr "Quitter"
+msgstr "Fermer"
 
 #: po/msgids:16
 msgid "Remove Account"
@@ -81,4 +82,4 @@ msgstr "Supprimer le compte"
 
 #: po/msgids:17
 msgid "Undo"
-msgstr "Annuler l'action"
+msgstr "Annuler"
