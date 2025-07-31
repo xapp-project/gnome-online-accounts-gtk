@@ -1,0 +1,84 @@
+# Kannada translation for linuxmint
+# Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-03-27 17:11+0000\n"
+"PO-Revision-Date: 2025-07-26 06:34+0000\n"
+"Last-Translator: Manas salian <Unknown>\n"
+"Language-Team: Kannada <kn@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:25+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+
+#: po/msgids:4
+#, c-format
+msgid "%s Account"
+msgstr "%s ಖಾತೆ"
+
+#: po/msgids:5
+#, c-format
+msgid "<b>%s</b> removed"
+msgstr "<b>%s</b> ತೆಗೆದುಹಾಕಲಾಗಿದೆ"
+
+#: po/msgids:6 src/gnome-online-accounts-gtk.c:479
+msgid "About"
+msgstr "ಇದರ ಬಗ್ಗೆ"
+
+#: po/msgids:7 src/online-accounts.ui:76
+msgid "Accounts"
+msgstr "ಖಾತೆಗಳು"
+
+#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
+#: src/online-accounts.ui:28
+msgid "Connect to your data in the cloud"
+msgstr "ಕ್ಲೌಡ್‌ನಲ್ಲಿರುವ ನಿಮ್ಮ ಡೇಟಾವನ್ನು ಸಂಪರ್ಕಿಸಿ"
+
+#: po/msgids:9
+msgid "Error removing account"
+msgstr "ಖಾತೆಯನ್ನು ತೆಗೆದುಹಾಕುವಲ್ಲಿ ದೋಷ"
+
+#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
+msgid ""
+"google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
+"kerberos;imap;smtp;pocket;readitlater;account;"
+msgstr ""
+"ಗೂಗಲ್; ಫೇಸ್‌ಬುಕ್; ಟ್ವಿಟರ್; ಯಾಹೂ; ವೆಬ್; ಆನ್‌ಲೈನ್; ಚಾಟ್; ಕ್ಯಾಲೆಂಡರ್; ಮೇಲ್; "
+"ಸಂಪರ್ಕ; ಓನ್ಕ್ಲೌಡ್ ; ಕೆರ್ಬರೋಸ್; ಐಮ್ಯಾಪ್; ಎಸ್‌ಎಂಟಿಪಿ; ಪಾಕೆಟ್; ರೀಡ್ಇಟ್ಲೇಟರ್; "
+"ಖಾತೆ;"
+
+#: po/msgids:11 src/online-accounts.ui:149
+msgid "No internet connection - connect to set up new online accounts"
+msgstr ""
+"ಇಂಟರ್‌ನೆಟ್ ಸಂಪರ್ಕವಿಲ್ಲ – ಹೊಸ ಆನ್‌ಲೈನ್ ಖಾತೆಗಳನ್ನು ಸ್ಥಾಪಿಸಲು ಸಂಪರ್ಕ ಹೊಂದಿಸಿ"
+
+#: po/msgids:12
+msgid "Online Account"
+msgstr "ಆನ್‌ಲೈನ್ ಖಾತೆ"
+
+#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
+#: src/online-accounts.ui:19
+msgid "Online Accounts"
+msgstr "ಆನ್‌ಲೈನ್‌ ಖಾತೆಗಳು"
+
+#: po/msgids:14
+msgid "Providers"
+msgstr "ಪೂರೈಕೆದಾರರು"
+
+#: po/msgids:15 src/gnome-online-accounts-gtk.c:480
+msgid "Quit"
+msgstr "ನಿರ್ಗಮಿಸಿ"
+
+#: po/msgids:16
+msgid "Remove Account"
+msgstr "ಖಾತೆಯನ್ನು ತೆಗೆದುಹಾಕಿ"
+
+#: po/msgids:17
+msgid "Undo"
+msgstr "ರದ್ದುಗೊಳಿಸಿ"
