@@ -1,4 +1,4 @@
-project('gnome-online-accounts-gtk', 'c', version : '3.50.6', meson_version : '>= 0.56.0', license : 'GPLv3.0+')
+project('gnome-online-accounts-gtk', 'c', version : '3.50.7', meson_version : '>= 0.56.0', license : 'GPLv3.0+')
 
 i18n = import('i18n')
 gettext_package = meson.project_name()
