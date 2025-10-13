@@ -347,7 +347,7 @@ create_account_widget (GObject *item, gpointer user_data)
     gtk_box_append (GTK_BOX (box), label);
   
     /* "Needs attention" icon */
-    icon = gtk_image_new_from_icon_name ("dialog-warning-symbolic");
+    icon = gtk_image_new_from_icon_name ("xapp-dialog-warning-symbolic");
     gtk_image_set_icon_size (GTK_IMAGE (icon), GTK_ICON_SIZE_NORMAL);
 
     gtk_widget_set_visible (icon, FALSE);
