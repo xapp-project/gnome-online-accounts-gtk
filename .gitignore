@@ -8,6 +8,15 @@ debian/*.log
 debian/tmp
 debian/files
 
+# Generated .deb packages and build artifacts
+*.deb
+*.ddeb
+*.buildinfo
+*.changes
+*.dsc
+*.tar.xz
+*.tar.gz
+
 # Meson build directory
 build/
 builddir/
