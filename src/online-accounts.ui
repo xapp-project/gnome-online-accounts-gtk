@@ -111,7 +111,7 @@
                     <property name="halign">center</property>
                     <child>
                       <object class="GtkImage">
-                        <property name="icon-name">xapp-network-offline-symbolic</property>
+                        <property name="icon-name">xsi-network-offline-symbolic</property>
                       </object>
                     </child>
                     <child>
