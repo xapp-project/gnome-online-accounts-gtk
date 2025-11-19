@@ -1,3 +1,14 @@
+gnome-online-accounts-gtk (3.50.8) zena; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Switch to XApp symbolic icons
+  * Switch to xapp-symbolic-icons (XSI)
+
+  [ Alex Alexandrovich ]
+  * Add linux mint build instructions (#22)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 19 Nov 2025 16:11:31 +0000
+
 gnome-online-accounts-gtk (3.50.7) zara; urgency=medium
 
   * l10n: Update translations
