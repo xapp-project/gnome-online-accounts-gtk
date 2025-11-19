@@ -55,6 +55,30 @@ debuild --no-sign
 sudo debi
 ```
 
+### Linux Mint (Quick compilation)
+
+For Linux Mint users who want to compile without creating .deb packages:
+
+```bash
+# Install dependencies
+sudo apt install meson ninja-build libgoa-1.0-dev libgtk-4-dev libglib2.0-dev
+
+# Clone repository (if not already done)
+git clone https://github.com/xapp-project/gnome-online-accounts-gtk && cd gnome-online-accounts-gtk
+
+# Setup build directory
+meson setup build
+
+# Compile
+ninja -C build
+
+# Run the application
+./build/src/gnome-online-accounts-gtk
+
+# Optional: Install to system
+sudo ninja -C build install
+```
+
 ## Other Distributions
 
 The concrete packages to install depend on your distro.

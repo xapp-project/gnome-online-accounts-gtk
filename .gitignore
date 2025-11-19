@@ -1,3 +1,4 @@
+# Debian packaging
 debian/debhelper-build-stamp
 debian/*.substvars
 debian/gnome-online-accounts-gtk
@@ -6,3 +7,46 @@ debian/.debhelper
 debian/*.log
 debian/tmp
 debian/files
+
+# Generated .deb packages and build artifacts
+*.deb
+*.ddeb
+*.buildinfo
+*.changes
+*.dsc
+*.tar.xz
+*.tar.gz
+
+# Meson build directory
+build/
+builddir/
+
+# Compiled binaries
+*.o
+*.so
+*.a
+*.exe
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.orig
+*.rej
+
+# Log files
+*.log
