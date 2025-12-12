@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2025-01-04 11:30+0000\n"
+"PO-Revision-Date: 2025-11-07 12:14+0000\n"
 "Last-Translator: Avi Markovitz <avi.markovitz@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-07-31 09:25+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
 #: po/msgids:4
 #, c-format
@@ -25,7 +25,7 @@ msgstr "חשבון %s"
 #: po/msgids:5
 #, c-format
 msgid "<b>%s</b> removed"
-msgstr "חשבון <b>%s</b> הוסר"
+msgstr "<b>%s</b> הוסר"
 
 #: po/msgids:6 src/gnome-online-accounts-gtk.c:479
 msgid "About"
@@ -38,11 +38,11 @@ msgstr "חשבונות"
 #: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
 #: src/online-accounts.ui:28
 msgid "Connect to your data in the cloud"
-msgstr "התחברות למידע אישי בענן"
+msgstr "התחברות לנתונים בענן"
 
 #: po/msgids:9
 msgid "Error removing account"
-msgstr "שגיאה בהסרת חשבון"
+msgstr "שגיאת הסרת חשבון"
 
 #: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
 msgid ""
@@ -54,7 +54,7 @@ msgstr ""
 
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
-msgstr "אין חיבור למרשתת – נא להתחבר להגדרת חשבונות מקוונים חדשים"
+msgstr "אין חיבור למרשתת – נא להתחבר כדי להגדיר חשבונות מקוונים חדשים"
 
 #: po/msgids:12
 msgid "Online Account"

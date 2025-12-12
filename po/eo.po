@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2024-12-24 18:45+0000\n"
+"PO-Revision-Date: 2025-10-29 20:58+0000\n"
 "Last-Translator: Piet Coppens <Unknown>\n"
 "Language-Team: Esperanto <eo@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-07-31 09:25+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
 #: po/msgids:4
 #, c-format
@@ -49,8 +49,8 @@ msgid ""
 "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
 "kerberos;imap;smtp;pocket;readitlater;account;"
 msgstr ""
-"guglo;fejsbuko;tvitero;yahoo;reto;enrete;retbabili;kalendaro;retpoŝto;kontakt"
-"o;propranubo;cerbero;imap;smtp;poŝo;legoteposte;konto;"
+"guglo;fejsbuko;tvitero;yahoo;reto;enrete;retbabili;kalendaro;retmesaĝo;kontak"
+"to;propranubo;cerbero;imap;smtp;poŝo;legoteposte;konto;"
 
 #: po/msgids:11 src/online-accounts.ui:149
 msgid "No internet connection - connect to set up new online accounts"
