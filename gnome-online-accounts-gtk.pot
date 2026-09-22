@@ -8,13 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-online-accounts-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 17:11+0000\n"
+"POT-Creation-Date: 2026-09-22 10:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: po/msgids:4
@@ -27,16 +27,15 @@ msgstr ""
 msgid "<b>%s</b> removed"
 msgstr ""
 
-#: po/msgids:6 src/gnome-online-accounts-gtk.c:479
+#: po/msgids:6
 msgid "About"
 msgstr ""
 
-#: po/msgids:7 src/online-accounts.ui:76
+#: po/msgids:7 src/online-accounts.ui:47
 msgid "Accounts"
 msgstr ""
 
-#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
-#: src/online-accounts.ui:28
+#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:3
 msgid "Connect to your data in the cloud"
 msgstr ""
 
@@ -44,13 +43,11 @@ msgstr ""
 msgid "Error removing account"
 msgstr ""
 
-#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
-msgid ""
-"google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
-"kerberos;imap;smtp;pocket;readitlater;account;"
+#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:8
+msgid "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;kerberos;imap;smtp;pocket;readitlater;account;"
 msgstr ""
 
-#: po/msgids:11 src/online-accounts.ui:149
+#: po/msgids:11 src/online-accounts.ui:121
 msgid "No internet connection - connect to set up new online accounts"
 msgstr ""
 
@@ -58,16 +55,16 @@ msgstr ""
 msgid "Online Account"
 msgstr ""
 
-#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
-#: src/online-accounts.ui:19
+#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:2
+#: src/online-accounts.ui:8
 msgid "Online Accounts"
 msgstr ""
 
-#: po/msgids:14
+#: po/msgids:14 src/online-accounts.ui:70
 msgid "Providers"
 msgstr ""
 
-#: po/msgids:15 src/gnome-online-accounts-gtk.c:480
+#: po/msgids:15
 msgid "Quit"
 msgstr ""
 
@@ -77,4 +74,8 @@ msgstr ""
 
 #: po/msgids:17
 msgid "Undo"
+msgstr ""
+
+#: src/online-accounts.ui:38
+msgid "No internet connection — connect to set up new online accounts"
 msgstr ""
