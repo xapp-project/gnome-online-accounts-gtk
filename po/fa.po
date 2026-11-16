@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-03-27 17:11+0000\n"
+"POT-Creation-Date: 2026-09-22 10:15+0100\n"
 "PO-Revision-Date: 2024-05-26 09:41+0000\n"
 "Last-Translator: Parham <Unknown>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 
 #: po/msgids:4
 #, c-format
@@ -27,16 +27,15 @@ msgstr "حساب %s"
 msgid "<b>%s</b> removed"
 msgstr "<b>%s</b> حذف شد"
 
-#: po/msgids:6 src/gnome-online-accounts-gtk.c:479
+#: po/msgids:6
 msgid "About"
 msgstr "درباره"
 
-#: po/msgids:7 src/online-accounts.ui:76
+#: po/msgids:7 src/online-accounts.ui:47
 msgid "Accounts"
 msgstr "حساب‌ها"
 
-#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
-#: src/online-accounts.ui:28
+#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:3
 msgid "Connect to your data in the cloud"
 msgstr "اتصال به داده های شما در فضای ابری"
 
@@ -44,7 +43,7 @@ msgstr "اتصال به داده های شما در فضای ابری"
 msgid "Error removing account"
 msgstr "خطا هنگام حذف کردن حساب"
 
-#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
+#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:8
 msgid ""
 "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
 "kerberos;imap;smtp;pocket;readitlater;account;"
@@ -52,7 +51,7 @@ msgstr ""
 "گوگل؛فیسبوک؛توییتر؛Yahoo؛وب؛آنلاین؛گفتگو؛تقویم؛نامه؛تماس؛owncloud؛kerberos؛im"
 "ap؛smtp؛pocket؛readitlater؛حساب؛"
 
-#: po/msgids:11 src/online-accounts.ui:149
+#: po/msgids:11 src/online-accounts.ui:121
 msgid "No internet connection - connect to set up new online accounts"
 msgstr "اتصال به اینترنت وجود ندارد - برای تنظیم حساب‌های جدید متصل شوید"
 
@@ -60,16 +59,16 @@ msgstr "اتصال به اینترنت وجود ندارد - برای تنظیم
 msgid "Online Account"
 msgstr "حساب آنلاین"
 
-#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
-#: src/online-accounts.ui:19
+#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:2
+#: src/online-accounts.ui:8
 msgid "Online Accounts"
 msgstr "حساب های آنلاین"
 
-#: po/msgids:14
+#: po/msgids:14 src/online-accounts.ui:70
 msgid "Providers"
 msgstr "ارائه دهندگان"
 
-#: po/msgids:15 src/gnome-online-accounts-gtk.c:480
+#: po/msgids:15
 msgid "Quit"
 msgstr "خروج"
 
@@ -80,3 +79,7 @@ msgstr "حذف حساب"
 #: po/msgids:17
 msgid "Undo"
 msgstr "واگرد"
+
+#: src/online-accounts.ui:38
+msgid "No internet connection — connect to set up new online accounts"
+msgstr ""

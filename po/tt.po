@@ -1,0 +1,85 @@
+# Tatar translation for linuxmint
+# Copyright (c) 2026 Rosetta Contributors and Canonical Ltd 2026
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2026-09-22 10:15+0100\n"
+"PO-Revision-Date: 2026-02-03 10:40+0000\n"
+"Last-Translator: Roman <Unknown>\n"
+"Language-Team: Tatar <tt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
+
+#: po/msgids:4
+#, c-format
+msgid "%s Account"
+msgstr "%s Хисап"
+
+#: po/msgids:5
+#, c-format
+msgid "<b>%s</b> removed"
+msgstr "<b>%s</b> бетерлде"
+
+#: po/msgids:6
+msgid "About"
+msgstr "Программа турында"
+
+#: po/msgids:7 src/online-accounts.ui:47
+msgid "Accounts"
+msgstr "Хисаплар"
+
+#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:3
+msgid "Connect to your data in the cloud"
+msgstr "Болыттагы мәгълүматларыгызга тоташыгыз"
+
+#: po/msgids:9
+msgid "Error removing account"
+msgstr "Хисапны бетерүдә хата"
+
+#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:8
+msgid ""
+"google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
+"kerberos;imap;smtp;pocket;readitlater;account;"
+msgstr ""
+"google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
+"kerberos;imap;smtp;pocket;readitlater;account;"
+
+#: po/msgids:11 src/online-accounts.ui:121
+msgid "No internet connection - connect to set up new online accounts"
+msgstr "Интернет тоташмау - яңа онлайн хисаплар кертү өчен тоташыгыз"
+
+#: po/msgids:12
+msgid "Online Account"
+msgstr "Онлайн Хисап"
+
+#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:2
+#: src/online-accounts.ui:8
+msgid "Online Accounts"
+msgstr "Онлайн Хисаплар"
+
+#: po/msgids:14 src/online-accounts.ui:70
+msgid "Providers"
+msgstr "Тәэмин итүчеләр"
+
+#: po/msgids:15
+msgid "Quit"
+msgstr "Чыгу"
+
+#: po/msgids:16
+msgid "Remove Account"
+msgstr "Хисапны Бетерү"
+
+#: po/msgids:17
+msgid "Undo"
+msgstr "Кире Алу"
+
+#: src/online-accounts.ui:38
+msgid "No internet connection — connect to set up new online accounts"
+msgstr ""

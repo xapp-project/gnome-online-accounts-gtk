@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-03-27 17:11+0000\n"
+"POT-Creation-Date: 2026-09-22 10:15+0100\n"
 "PO-Revision-Date: 2024-09-10 14:09+0000\n"
 "Last-Translator: Divya kalra <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 
 #: po/msgids:4
 #, c-format
@@ -27,16 +27,15 @@ msgstr "%s खाता"
 msgid "<b>%s</b> removed"
 msgstr "<b>%s</b> निकाला गया"
 
-#: po/msgids:6 src/gnome-online-accounts-gtk.c:479
+#: po/msgids:6
 msgid "About"
 msgstr "परिचय"
 
-#: po/msgids:7 src/online-accounts.ui:76
+#: po/msgids:7 src/online-accounts.ui:47
 msgid "Accounts"
 msgstr "खाते"
 
-#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
-#: src/online-accounts.ui:28
+#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:3
 msgid "Connect to your data in the cloud"
 msgstr "क्लाउड में अपने डेटा से कनेक्ट करें"
 
@@ -44,7 +43,7 @@ msgstr "क्लाउड में अपने डेटा से कने�
 msgid "Error removing account"
 msgstr "खाता हटाने में त्रुटि"
 
-#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
+#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:8
 msgid ""
 "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
 "kerberos;imap;smtp;pocket;readitlater;account;"
@@ -52,7 +51,7 @@ msgstr ""
 "गूगल; फेसबुक; चहचहाहट; याहू; वेब; ऑनलाइन; गपशप; कैलेंडर; डाक; संपर्क; खुद का "
 "बादल; केर्बेरोस; आईएमएपी; एसएमटीपी; जेब; पढ़ना; खाता;"
 
-#: po/msgids:11 src/online-accounts.ui:149
+#: po/msgids:11 src/online-accounts.ui:121
 msgid "No internet connection - connect to set up new online accounts"
 msgstr ""
 "कोई इंटरनेट कनेक्शन नहीं - नए ऑनलाइन खाते स्थापित करने के लिए कनेक्ट करें"
@@ -61,16 +60,16 @@ msgstr ""
 msgid "Online Account"
 msgstr "ऑनलाइन खाता"
 
-#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
-#: src/online-accounts.ui:19
+#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:2
+#: src/online-accounts.ui:8
 msgid "Online Accounts"
 msgstr "ऑनलाइन खाते"
 
-#: po/msgids:14
+#: po/msgids:14 src/online-accounts.ui:70
 msgid "Providers"
 msgstr "प्रदाता"
 
-#: po/msgids:15 src/gnome-online-accounts-gtk.c:480
+#: po/msgids:15
 msgid "Quit"
 msgstr "छोड़ें"
 
@@ -81,3 +80,7 @@ msgstr "खाता हटाएँ"
 #: po/msgids:17
 msgid "Undo"
 msgstr "पूर्ववत करें"
+
+#: src/online-accounts.ui:38
+msgid "No internet connection — connect to set up new online accounts"
+msgstr ""

@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-03-27 17:11+0000\n"
-"PO-Revision-Date: 2024-07-19 01:23+0000\n"
+"POT-Creation-Date: 2026-09-22 10:15+0100\n"
+"PO-Revision-Date: 2026-10-10 12:20+0000\n"
 "Last-Translator: 张鹏 <scbeta@qq.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 
 #: po/msgids:4
 #, c-format
@@ -27,16 +27,15 @@ msgstr "%s 账号"
 msgid "<b>%s</b> removed"
 msgstr "<b>%s</b> 已移除"
 
-#: po/msgids:6 src/gnome-online-accounts-gtk.c:479
+#: po/msgids:6
 msgid "About"
 msgstr "关于"
 
-#: po/msgids:7 src/online-accounts.ui:76
+#: po/msgids:7 src/online-accounts.ui:47
 msgid "Accounts"
 msgstr "帐号"
 
-#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:4
-#: src/online-accounts.ui:28
+#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:3
 msgid "Connect to your data in the cloud"
 msgstr "连接您的云端数据"
 
@@ -44,14 +43,14 @@ msgstr "连接您的云端数据"
 msgid "Error removing account"
 msgstr "移除账号出错"
 
-#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:7
+#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:8
 msgid ""
 "google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
 "kerberos;imap;smtp;pocket;readitlater;account;"
 msgstr ""
 "谷歌;脸书;推特;雅虎;网页;在线;聊天;日历;邮件;联系;OwnCloud;Kerberos;imap;smtp;口袋;readitlater;账号;"
 
-#: po/msgids:11 src/online-accounts.ui:149
+#: po/msgids:11 src/online-accounts.ui:121
 msgid "No internet connection - connect to set up new online accounts"
 msgstr "没有互联网连接 - 连接后再设置新的在线账号"
 
@@ -59,16 +58,16 @@ msgstr "没有互联网连接 - 连接后再设置新的在线账号"
 msgid "Online Account"
 msgstr "在线账号"
 
-#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:3
-#: src/online-accounts.ui:19
+#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:2
+#: src/online-accounts.ui:8
 msgid "Online Accounts"
 msgstr "在线账号"
 
-#: po/msgids:14
+#: po/msgids:14 src/online-accounts.ui:70
 msgid "Providers"
 msgstr "提供者"
 
-#: po/msgids:15 src/gnome-online-accounts-gtk.c:480
+#: po/msgids:15
 msgid "Quit"
 msgstr "退出"
 
@@ -79,3 +78,7 @@ msgstr "移除账号"
 #: po/msgids:17
 msgid "Undo"
 msgstr "撤消"
+
+#: src/online-accounts.ui:38
+msgid "No internet connection — connect to set up new online accounts"
+msgstr "无互联网连接——连接以设置新的在线帐号"

@@ -1,0 +1,87 @@
+# Afrikaans translation for linuxmint
+# Copyright (c) 2026 Rosetta Contributors and Canonical Ltd 2026
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2026-09-22 10:15+0100\n"
+"PO-Revision-Date: 2026-10-07 11:45+0000\n"
+"Last-Translator: Stéfan Driaan Turvey <Unknown>\n"
+"Language-Team: Afrikaans <af@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
+
+#: po/msgids:4
+#, c-format
+msgid "%s Account"
+msgstr "%s-rekening"
+
+#: po/msgids:5
+#, c-format
+msgid "<b>%s</b> removed"
+msgstr "<b>%s</b> verwyder"
+
+#: po/msgids:6
+msgid "About"
+msgstr "Aangaande"
+
+#: po/msgids:7 src/online-accounts.ui:47
+msgid "Accounts"
+msgstr "Rekeninge"
+
+#: po/msgids:8 data/gnome-online-accounts-gtk.desktop.in.in:3
+msgid "Connect to your data in the cloud"
+msgstr "Koppel aan jou data in die wolk"
+
+#: po/msgids:9
+msgid "Error removing account"
+msgstr "Fout met verwydering van rekening"
+
+#: po/msgids:10 data/gnome-online-accounts-gtk.desktop.in.in:8
+msgid ""
+"google;facebook;twitter;yahoo;web;online;chat;calendar;mail;contact;owncloud;"
+"kerberos;imap;smtp;pocket;readitlater;account;"
+msgstr ""
+"google;facebook;twitter;yahoo;web;aanlyn;klets;kalender;pos;kontak;owncloud;k"
+"erberos;imap;smtp;pocket;readitlater;rekening;"
+
+#: po/msgids:11 src/online-accounts.ui:121
+msgid "No internet connection - connect to set up new online accounts"
+msgstr ""
+"Geen internetverbinding nie - koppel om nuwe aanlynrekeninge op te stel"
+
+#: po/msgids:12
+msgid "Online Account"
+msgstr "Aanlynrekening"
+
+#: po/msgids:13 data/gnome-online-accounts-gtk.desktop.in.in:2
+#: src/online-accounts.ui:8
+msgid "Online Accounts"
+msgstr "Aanlynrekeninge"
+
+#: po/msgids:14 src/online-accounts.ui:70
+msgid "Providers"
+msgstr "Verskaffers"
+
+#: po/msgids:15
+msgid "Quit"
+msgstr "Sluit af"
+
+#: po/msgids:16
+msgid "Remove Account"
+msgstr "Verwyder rekening"
+
+#: po/msgids:17
+msgid "Undo"
+msgstr "Ontdoen"
+
+#: src/online-accounts.ui:38
+msgid "No internet connection — connect to set up new online accounts"
+msgstr ""
+"Geen internetverbinding nie — koppel om nuwe aanlynrekeninge op te stel"
