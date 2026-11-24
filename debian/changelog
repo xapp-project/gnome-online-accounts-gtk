@@ -1,3 +1,9 @@
+gnome-online-accounts-gtk (3.50.13) adrien; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 24 Nov 2026 16:11:41 +0000
+
 gnome-online-accounts-gtk (3.50.12) adrien; urgency=medium
 
   * l10n: Update translations
